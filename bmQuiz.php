@@ -83,7 +83,7 @@
    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
  </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary text-center">Submit</button>
 </form>
 
 </div>
