@@ -50,14 +50,51 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="mt-3">
-        <h1 class="text-center">Welcome to BisonMatch! Version 2.0</h1>
+        <h1 class="text-center">Welcome to BisonMatch!</h1>
       </div>
 
 
 
       <div class="container">
+        <h3 class="text-center">What is BisonMatch?</h3>
  &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
  It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life (this is Lipscomb after all)!
+      </div>
+
+      <div class="container">
+        <h3 class="text-center">How does it work?</h3>
+All you have to do is answer a few questions, then before Valentine's Day comes around you will be given the option of purchasing your results.
+The proceeds from your purchase will go to raising funds for the ACM of Lipscomb University.
+So take the test, donate $2.00, and find your date for Valentine's Day!
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+
+          <div class="card text-center" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Fill out the quiz</h5>
+        <p class="card-text">Answer ten questions put together by one of the psychology students here at Lipscomb.</p>
+      </div>
+    </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Purchase your results</h5>
+      <p class="card-text">The proceeds from your purchase will go to raising funds for the ACM of Lipscomb University. </p>
+    </div>
+  </div>
+</div>
+<div class="col-md">
+  <div class="card" style="width: 18rem;">
+<div class="card-body">
+<h5 class="card-title">Find your date for Valentines Day</h5>
+<p class="card-text"> Blah blah</p>
+</div>
+</div>
+</div>
+
       </div>
 
       <div class="container text-center">

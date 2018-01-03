@@ -128,8 +128,6 @@
 </div>
 </form>
     </main>
-
-
     <footer class="footer">
       <div class="container">
         <span class="text-muted">&copy;2018 Lipscomb University's student ACM chapter</span>
