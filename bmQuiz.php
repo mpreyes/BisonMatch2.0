@@ -55,43 +55,26 @@
 <div class="container">
 
   <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Name:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">L#:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Name:</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required="required">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">L#:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L#" required="required">
+    </div>
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">LU Email Address:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">LU Email Address:</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required="required">
+    </div>
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">LU Email Address:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-
-  <div class="form-group">
-   <label for="exampleFormControlTextarea1">Short Bio:</label>
-   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter social media handles" rows="2"></textarea>
- </div>
-
-
-
-
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <div class="form-group">
+     <label for="exampleFormControlTextarea1">Short Bio:</label>
+     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter social media handles" rows="2"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
 </div>
 
@@ -99,8 +82,8 @@
 
 
 
-      <div class="card mb-3">
-  <img class="card-img-top" src="images/cuteappa.png" width="50px" alt="Cute appa">
+  <div class="card mb-3">
+  <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:500px;" alt="Cute appa">
   <div class="card-body">
     <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>
   </div>
