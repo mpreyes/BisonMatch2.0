@@ -62,24 +62,24 @@
   <div class="container" id="frm">
     <div class="form-group">
       <label for="exampleInputEmail1">Name:</label>
-      <input type="text" class="form-control" id="test" aria-describedby="emailHelp" placeholder="Enter your first and last name">
+      <input type="text" class="form-control" id="test" aria-describedby="emailHelp" placeholder="Enter your first and last name" required>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">L#:</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L number">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L number" required>
     </div>
 
     <div class="form-group">
       <label for="exampleInputEmail1">LU Email Address:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
     </div>
      Gender: &nbsp;
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
       <label class="form-check-label" for="inlineRadio1">Male</label>
     </div>
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
       <label class="form-check-label" for="inlineRadio2">Female</label>
     </div>
 
