@@ -2,3 +2,12 @@
 *{
   font-family: 'Arvo', serif;
 }
+
+
+.studentInfo {
+  display: block;
+}
+
+.quizInfo {
+display: none;
+}
