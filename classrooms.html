@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>High Hope</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/modern-business.css" rel="stylesheet">
+
+    <script type="text/javascript">
+      function toggleDisplay(x){
+        //turn off display of everything?
+        document.getElementById('ladybug').style.display = "none";
+        document.getElementById('bumblebee').style.display = "none";
+        document.getElementById('inchworm').style.display = "none";
+        document.getElementById('caterpillar').style.display = "none";
+        document.getElementById('butterfly').style.display = "none";
+        document.getElementById('dragonfly').style.display = "none";
+        document.getElementById('firefly').style.display = "none";
+        document.getElementById('grasshopper').style.display = "none";
+        //turn on display
+        document.getElementById(x).style.display = "inline";
+      }
+    </script>
+
+  </head>
+
+  <style>
+a.navbar-brand{
+  font-family: serif;
+  font-size: 2em;
+  color: #0D4068 !important;
+}
+
+.nav-link {
+  font-family: serif;
+  font-size: 1.5em;
+  color: #0D4068 !important;
+}
+
+.carousel-caption *{
+  color: black;
+}
+
+.nav-link{
+  font-size: 1.3em;
+}
+.group{
+  border-bottom: 2px solid #0D4068;
+  color: #0D4068;
+}
+.resource{
+  display: none;
+  /*display: inline;*/
+}
+.noDecoration a:hover{
+  text-decoration: none;
+}
+p {
+  margin: 0em;
+}
+
+@font-face{
+  font-family: myFirstFont;
+  src: url('../../Bella.ttf')
+}
+h2.customfont {
+    font-family: myFirstFont;
+    color: #D2B4DE;
+}
+p.customcolor{
+  color: #1F618D;
+}
+.button {
+    background-color: #E74C3C ; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: block;
+}
+.button2{background-color: #F4D03F; /* Yellow */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+.button3{background-color: #48C9B0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+.button4{background-color: #8E44AD; /* Purple */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+.button5{background-color: #3498DB; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+.button6{background-color: #835C3B; /* Brown */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+.button7{background-color: #F9A7B0; /* Pink */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+.button8{background-color: #43C6DB; /* Turqoise */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+}
+  </style>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="../../index.html"><img src="../../imgs/logo.png"> High Hopes </a>
+      <div class="container" style="margin-right: 20px;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../about/stories.html">Personal Stories</a>
+                <a class="dropdown-item" href="../about/board.html">Board of Directors</a>
+                <a class="dropdown-item" href="../about/report.html">Annual Report</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Preschool
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="classrooms.html">Classrooms</a>
+                <a class="dropdown-item" href="team.html">Meet the Team</a>
+                <a class="dropdown-item" href="parents.html">Preschool Parents</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pediatric Therapy
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../therapy/services.html">Therapy Services</a>
+                <a class="dropdown-item" href="../therapy/forms.html">Clinical Forms</a>
+                <a class="dropdown-item" href="../therapy/questions.html">Clinical Billing Questions</a>
+                <a class="dropdown-item" href="../therapy/therapy.html">Don't steal therapy</a>
+                <a class="dropdown-item" href="../therapy/team.html">Meet Therapy Team</a>
+                <a class="dropdown-item" href="../therapy/physicians.html">For Physicians</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../events.php">News and Events</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ways to Give
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="../give/apparel.html">High Hopes Apparel</a>
+                <a class="dropdown-item" href="../give/donate.html">Donate</a>
+                <a class="dropdown-item" href="../give/involve.html">Get Involved</a>
+                <a class="dropdown-item" href="../give/wish.html">Wish List</a>
+                <a class="dropdown-item" href="../give/campaign.html">Capital Campaign Share</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Connecting the Dots
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="../connect/resources.html">Resources</a>
+                <a class="dropdown-item" href="../connect/planning.html">Educational Planning & Support</a>
+                <a class="dropdown-item" href="../connect/family.html">Family Support</a>
+                <a class="dropdown-item" href="../connect/financial.html">Financial Planning</a>
+                <a class="dropdown-item" href="../connect/recreational.html">Recreational & Therapeutic</a>
+                <a class="dropdown-item" href="../connect/transitional.html">Transitional Planning</a>
+                <a class="dropdown-item" href="../connect/tips.html">Tips by & For Parents</a>
+                <a class="dropdown-item" href="../connect/spotlight.html">Local Spotlight</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="../contact/contact.html">Contact Us</a>
+                <a class="dropdown-item" href="../contact/schedule.html">Schedule New Patient</a>
+                <a class="dropdown-item" href="../contact/volunteer.html">Volunteers</a>
+                <a class="dropdown-item" href="../contact/employment.html">Employment</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="top">
+    </div>
+    <br>
+    <br>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Classrooms</h1>
+      <br>
+      <h4>Click to see the different classrooms!</h4>
+      <br>
+
+      <!--LADYBUG: BABIES-->
+      <a href="#top" onclick="toggleDisplay('ladybug')" class="noDecoration"><h3 class="button">Ladybug: Babies</h3></a>
+      <div class="container resource" id ="ladybug">
+        <img src="capture/ladybug.jpg" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Ladybug Room</h2>
+        <p>(Typically Babies aged 6 weeks - 12 months)</p>
+        <p>Maximum Class Size: 8 Students</p>
+        <p>Teacher-to-Student Ratio: 1-4</p>
+        <p>Curriculum: Baby time: Family Enrichment Program Infant Curriculum</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Develop the continuum of gross motor skills including rolling over, sitting up, crawling, cruising and walking.</li>
+          <li>Establish social interaction with peers.</li>
+          <li>Acquire early communication skills including baby sign language and beginning word productions.</li>
+          <li>Transition from liquid to solid diets; introduction of new foods.</li>
+          <li>Introduce infants to music with peers and very early classroom experiences (art play, reading books, games etc.).</li>
+          <li>Establish predictable routines.</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Ladybug Room</h2>
+        <p>
+          Development screenings conducted twice a year, once in the beginning of the school year and once in the late spring, to assess student progress and growth.
+          This allows teachers to assess skill levels and target specific developmental deficits for each child.
+          Daily communication is sent home with each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          Baby Time:  Family Enrichment Program Infant Curriculum is designed to capitalize on how a baby's daily routines can serve as the basis of learning, throughout the day.
+          Activities are centered around daily routines, as well as on special play time, talking time, and cuddling routines.
+          Baby sign gestures are introduced in this program to promote early and healthy communication.
+        </p>
+        <br>
+        <p>
+          Classrooms utilize a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive-praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our therapy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Ladybug Schedule</p>
+          <p class = customcolor>7:00 - 9:00 am  Arrival/Free Centers/Morning Bottles/Diaper Change</p>
+          <p class = customcolor>9:00 - 9:30 am Outside/Inside Play</p>
+          <p class = customcolor>9:30 - 10:00 am Diaper Change/Prepare for Nap</p>
+          <p class = customcolor>9:30 - 11:00 am Nap for Younger Children/Activity/Free Play</p>
+          <p class = customcolor>11:00 - 11:30 am Diaper Change</p>
+          <p class = customcolor>11:30 - 12:30 pm Lunch</p>
+          <p class = customcolor>12:30 - 1:00 pm Diaper Change</p>
+          <p class = customcolor>1:00 - 3:00 pm Nap</p>
+          <p class = customcolor>3:00 - 4:00 pm Diaper Change/Snacks/Bottles</p>
+          <p class = customcolor>4:00 - 5:30 pm Active Play</p>
+          <p class = customcolor>5:30 - 6:00 pm Prepare to go home</p>
+          <br>
+          <p class = customcolor>*Diapers are changed when necessary, or every 2 hours, whichever comes first, or as requested by parents.</p>
+          <p class = customcolor>**Schedule changes may be necessary to adapt to age-appropriate developmental needs.</p>
+        </small>
+      </div>
+
+      <!--BUMBLEBEE: CREEPERS-->
+      <a href="#top" onclick="toggleDisplay('bumblebee')" class="noDecoration"><h3 class="button2">Bumblebee: Creepers</h3></a>
+      <div class="container resource" id = "bumblebee">
+        <img src="capture/bumblebee.png" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Bumblebee Room</h2>
+        <p>(Typically Creepers ages 12 months - 16 months)</p>
+        <p>Maximum Class Size: 8 Students</p>
+        <p>Teacher-to-Student Ratio: 1-4</p>
+        <p>Curriculum: Baby time: Family Enrichment Program Infant Curriculum</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Introduce basic learning concepts, such as animals, people, colors, shapes, etc.</li>
+          <li>Increase awareness of surrounding environment</li>
+          <li>Learn sign language in conjunction with words and use it daily</li>
+          <li>Develop receptive language skills</li>
+          <li>Expand on previous classroom experiences</li>
+          <li>Develop age-appropriate play interactions</li>
+          <li>Demonstrate an awareness of color and other basic concepts</li>
+          <li>Transition from crib to mat</li>
+          <li>Transition from high chair to table</li>
+          <li>Transition from bottle to sippy cup</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Bumblebee Room</h2>
+        <p>
+          Development screenings are conducted twice yearly, once in the beginning of the school year and once in late Spring,
+          to assess student progress and growth which allows teachers to assess skill levels and target specific development deficits for each child.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          Baby Time:  Family Enrichment Program Infant Curriculum is designed to capitalize on how a baby's daily routines can serve as the basis of learning, throughout the day.
+          Activities are centered around daily routines, as well as on special play time, talking time, and cuddling routines.
+          Baby sign gestures are introduced in this program to promote early and healthy communication.
+        </p>
+        <br>
+        <p>
+          Classrooms utilize a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive-praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our therapy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Bumblebee Schedule</p>
+          <p class = customcolor>7:00 - 9:00 am Morning Extended Care/Play Time</p>
+          <p class = customcolor>9:00 - 9:15 am Drop Off/Diaper Change</p>
+          <p class = customcolor>9:15 - 9:45 am Gross Motor Play/Outside</p>
+          <p class = customcolor>9:45 - 10:00 am Prepare for Nap Time</p>
+          <p class = customcolor>10:30 - 11:00 am Gross Motor/Activity</p>
+          <p class = customcolor>11:30 - 12:15 pm Lunch</p>
+          <p class = customcolor>12:15 - 12:45 pm Play Time</p>
+          <p class = customcolor>12:45 - 1:15 pm Gross Motor/Outside</p>
+          <p class = customcolor>1:15 - 2:00 pm Art/Circle Time/Centers</p>
+          <p class = customcolor>2:00 - 3:15 pm Nap Time</p>
+          <p class = customcolor>3:15 - 3:30 pm School  Day Pick-Up</p>
+          <p class = customcolor>3:30 - 6:00 pm Afternoon Extended Care (Snack, Free Play, Diapers)</p>
+          <br>
+          <p class = customcolor>*Diapers are changed when necessary, or every 2 hours, whichever comes first, or as requested by parents.</p>
+        </small>
+      </div>
+
+      <!--INCHWORMS: EARLY TODDLERS-->
+      <a href="#top" onclick="toggleDisplay('inchworm')" class="noDecoration"><h3 class="button3">Inchworm: Early Toddlers</h3></a>
+      <div class="container resource" id ="inchworm">
+        <img src="capture/inchworm.webp" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Inchworm Room</h2>
+        <p>(Typically Early Toddlers, ages 16 months - 24 months)</p>
+        <p>Maximum Class Size: 8 Students</p>
+        <p>Teacher-to-Student Ratio: 1-4</p>
+        <p>Curriculum: Innovations: The Comprehensive Toddler Curriculum</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Increase vocabulary to 20+ words</li>
+          <li>Begin to associate objects with their function</li>
+          <li>Identify several body parts</li>
+          <li>Put two words together</li>
+          <li>Begin to build a concept of "more"</li>
+          <li>Sort objects by color</li>
+          <li>Understand and follow two-step directions</li>
+          <li>Develop a sense of self, understands "me" or "mine"</li>
+          <li>Show increased knowledge and memory of routine</li>
+          <li>Engage in early sensory play</li>
+          <li>Learn numbers through songs & repetitive activities</li>
+          <li>Begin to interact with familiar songs and stories</li>
+          <li>Explore books independently</li>
+          <li>Interact with other children</li>
+          <li>Begin to use fine motor skills through exploratory art and art play</li>
+          <li>Begin to develop independence in accomplishing tasks themselves</li>
+          <li>Learn to make a choice between two options</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Inchworm Room</h2>
+        <p>
+          Developmental screenings are conducted twice yearly, once in the beginning of the school year and once in the late Spring, to assess student progress and growth.
+          This allows teachers to assess skill levels and target specific developmental deficits for each child.
+          Daily communication is sent home on each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          Innovations: The Comprehensive Toddler Curriculum advocates thinking about and planning for everything that can, by the nature of the setting, contribute to child development and the teacher's relationship with the child and the family.
+          Everything involved in the curriculum works together to benefit the child. This curriculum is comprehensive -- encompassing all aspects of growing and learning; embracing the inter-relationship among the child's interest and response, child development, the child's family context and culture, and the reactions and interactions of the adults and other children.
+          Curriculum is aligned with the Tennessee Early Learning Developmental Standards, and is enriched whenever possible to ensure activities are age and developmentally appropriate. Sign language is incorporated in the Inchworm curriculum to expand early communication, lessen frustration, and aid in speech development.
+        </p>
+        <br>
+        <p>
+          The classroom utilizes a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our therapy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Inchworm Schedule</p>
+          <p class = customcolor>7:00 - 8:30 am Arrival/Free Centers</p>
+          <p class = customcolor>8:30 - 9:00 am Gross Motor</p>
+          <p class = customcolor>9:00 - 9:15 am Snack</p>
+          <p class = customcolor>9:15 - 9:35 am Circle Time</p>
+          <p class = customcolor>9:35 - 10:05 am Diaper Change</p>
+          <p class = customcolor>10:05 - 10:30 am Activity 1</p>
+          <p class = customcolor>10:30 - 11:05 am Activity 2</p>
+          <p class = customcolor>11:05 - 11:40 am Lunch</p>
+          <p class = customcolor>11:40 - 12:00 pm Diaper Change</p>
+          <p class = customcolor>12:00 - 2:00 pm Nap</p>
+          <p class = customcolor>2:00 - 2:30 pm Snack</p>
+          <p class = customcolor>2:30 - 3:00 pm Diaper Change</p>
+          <p class = customcolor>3:00 - 3:30 pm Activity 1</p>
+          <p class = customcolor>3:30 - 4:00 pm Activity 2</p>
+          <p class = customcolor>4:00 - 4:15 pm Diaper Change</p>
+          <p class = customcolor>4:15 - 6:00 pm Free Centers</p>
+          <br>
+          <p class = customcolor>*Diapers are changed when necessary, or every 2 hours, whichever comes first, or as requested by parents.</p>
+        </small>
+      </div>
+
+      <!--CATERPILLAR: TODDLERS-->
+      <a href="#top" onclick="toggleDisplay('caterpillar')" class="noDecoration"><h3 class="button4">Caterpillar: Toddlers</h3></a>
+      <div class="container resource" id ="caterpillar">
+        <img src="capture/caterpillar.webp" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Caterpillar Room</h2>
+        <p>(Typically Early Toddlers, ages 18 months - 30 months)</p>
+        <p>Maximum Class Size: 8 Students</p>
+        <p>Teacher-to-Student Ratio: 1-4</p>
+        <p>Curriculum: Innovations: Doors to Discovery</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Develop independence in accomplishing tasks themselves</li>
+          <li>Expand interactive social skills with peers</li>
+          <li>Learn, sing, and interact with familiar songs</li>
+          <li>Participate in sensory play (sand, water, beans, etc.)</li>
+          <li>Recognize and identify colors</li>
+          <li>Identify and participate in routines</li>
+          <li>Practice counting to ten</li>
+          <li>Recognize and enjoy reading familiar books</li>
+          <li>Develop early writing behaviors</li>
+          <li>Increase repetitive and expressive language</li>
+          <li>Participate in conversations within the classroom community</li>
+          <li>Understand shapes, counting, simple patterns, and cause & effect</li>
+          <li>Gain more body control and gross motor skills through music and movement</li>
+          <li>Develop reasoning and problem-solving skills</li>
+          <li>Develop a personal sense of art through access to multiple art media</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Caterpillar Room</h2>
+        <p>
+          Developmental screenings are conducted twice yearly, once in the beginning of the school year and once in the late Spring, to assess student progress and growth.
+          This allows teachers to assess skill levels and target specific developmental deficits for each child.
+          Daily communication is sent home on each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          Doors to Discovery, a literacy-based curriculum, is designed to develop the five areas identified by the International Reading Association (IRA) and the National Association for the Education of Young Children (NAEYC) as the foundation of early literacy success:  oral language, phonological awareness, concepts of print, alphabet knowledge and writing, and comprehension.
+          Classrooms are filled with print, language and literacy play, storybook reading, and writing allowing children to experience the joy and power associated with reading and writing while mastering basic concepts about print which research has shown are strong predictors of achievement.
+        </p>
+        <br>
+        <p>
+          The classroom utilizes a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms. If behavior issues persist, the teachers work closely with the parents and our thearpy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Inchworm Schedule</p>
+          <p class = customcolor>7:00 - 8:30 am Arrival/Free Centers</p>
+          <p class = customcolor>8:30 - 9:00 am Gross Motor</p>
+          <p class = customcolor>9:00 - 9:15 am Snack</p>
+          <p class = customcolor>9:15 - 9:35 am Circle Time</p>
+          <p class = customcolor>9:35 - 10:05 am Diaper Change</p>
+          <p class = customcolor>10:05 - 10:30 am Activity 1</p>
+          <p class = customcolor>10:30 - 11:05 am Activity 2</p>
+          <p class = customcolor>11:05 - 11:40 am Lunch</p>
+          <p class = customcolor>11:40 - 12:00 pm Diaper Change</p>
+          <p class = customcolor>12:00 - 2:00 pm Nap</p>
+          <p class = customcolor>2:00 - 2:30 pm Snack</p>
+          <p class = customcolor>2:30 - 3:00 pm Diaper Change</p>
+          <p class = customcolor>3:00 - 3:30 pm Activity 1</p>
+          <p class = customcolor>3:30 - 4:00 pm Activity 2</p>
+          <p class = customcolor>4:00 - 4:15 pm Diaper Change</p>
+          <p class = customcolor>4:15 - 6:00 pm Free Centers</p>
+          <br>
+          <p class = customcolor>*Diapers are changed when necessary, or every 2 hours, whichever comes first, or as requested by parents.</p>
+        </small>
+      </div>
+
+      <!--BUTTERFLY: EARLY 3 YRS-->
+      <a href="#top" onclick="toggleDisplay('butterfly')" class="noDecoration"><h3 class="button5">Butterfly: Early 3 Yrs</h3></a>
+      <div class="container resource" id ="butterfly">
+        <img src="capture/butterfly.webp" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Butterfly Room</h2>
+        <p>(Typically Early Toddlers, ages 30 months - 3 years)</p>
+        <p>Maximum Class Size: 10 Students</p>
+        <p>Teacher-to-Student Ratio: 1-5</p>
+        <p>Curriculum: Innovations: Doors to Discovery</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Accomplish many self-help activities</li>
+          <li>Incorporate music into the daily routine</li>
+          <li>Develop awareness and a sense of respect for others</li>
+          <li>Begin the process of toilet training</li>
+          <li>Participate in conversations</li>
+          <li>Scribble and draw with a purpose</li>
+          <li>Build knowledge of the world through observation and awareness of surroundings</li>
+          <li>Introduce early math concepts, such as counting and number/shape identification</li>
+          <li>Increase phonological awareness and awareness of printed text</li>
+          <li>Increase sensory awareness through sensory activities and play</li>
+          <li>Introduce letters of the alphabet and other early literacy concepts</li>
+          <li>Explore artistic expression freely through a variety of media</li>
+          <li>Demonstrate hand-eye coordination through exploration and manipulation of objects</li>
+          <li>Build an understanding of small quantities and the concept of "one more"</li>
+          <li>Acquire capacity to cooperatively play with other children</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Butterfly Room</h2>
+        <p>
+          Developmental screenings are conducted twice yearly, once in the beginning of the school year and once in the late Spring, to assess student progress and growth.
+          This allows teachers to assess skill levels and target specific developmental deficits for each child.
+          Daily communication is sent home on each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          Doors to Discovery, a literacy-based curriculum, is designed to develop the five areas identified by the International Reading Association (IRA) and the National Association for the Education of Young Children (NAEYC) as the foundation of early literacy success:  oral language, phonological awareness, concepts of print, alphabet knowledge and writing, and comprehension.
+          Classrooms are filled with print, language and literacy play, storybook reading, and writing allowing children to experience the joy and power associated with reading and writing while mastering basic concepts about print which research has shown are strong predictors of achievement.
+        </p>
+        <br>
+        <p>
+          The classroom utilizes a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our thearpy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Butterfly Schedule</p>
+          <p class = customcolor>7:00 - 7:30 am Arrival</p>
+          <p class = customcolor>7:30 - 8:45 am Gross Motor/Free Centers</p>
+          <p class = customcolor>8:45 - 9:00 am Snack</p>
+          <p class = customcolor>9:00 - 9:30 am Circle Time</p>
+          <p class = customcolor>9:30 - 9:45 am Activity 1</p>
+          <p class = customcolor>9:45 - 10:00 am Centers/Diaper Change</p>
+          <p class = customcolor>10:00 - 10:10 am Activity 2/Diaper Change</p>
+          <p class = customcolor>10:10 - 10:20 am Music and Movement</p>
+          <p class = customcolor>10:20 - 10:30 am Story Time</p>
+          <p class = customcolor>10:30 - 11:00 am Gross Motor</p>
+          <p class = customcolor>11:00 - 11:45 am Lunch</p>
+          <p class = customcolor>11:45 - 2:00 pm Nap</p>
+          <p class = customcolor>2:00 - 2:30 pm Diaper Change</p>
+          <p class = customcolor>2:30 - 2:45 pm Snack</p>
+          <p class = customcolor>2:45 - 6:00 pm Free Centers/Directed Play</p>
+          <br>
+          <p class = customcolor>*Diaper changes or bathroom breaks are done every two hours, or as needed.</p>
+        </small>
+      </div>
+
+      <!--DRAGONFLY: 3-4 YRS-->
+      <a href="#top" onclick="toggleDisplay('dragonfly')" class="noDecoration"><h3 class="button6">Dragonfly: 3-4 Yrs</h3></a>
+      <div class="container resource" id ="dragonfly">
+        <img src="capture/dragonfly.webp" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Dragonfly Room</h2>
+        <p>(Typically Early Toddlers, ages 30 months - 3 years)</p>
+        <p>Maximum Class Size: 12 Students</p>
+        <p>Teacher-to-Student Ratio: 1-6</p>
+        <p>Curriculum: Read, Play, Learn!</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Increase precision of grasp in using writing tools</li>
+          <li>Introduce simple weather concepts</li>
+          <li>Connect written letters to the sounds they make</li>
+          <li>Begin to use scissors</li>
+          <li>Understand and follow basic safety rules</li>
+          <li>Gain control over impulses</li>
+          <li>Engage in cooperative play with other children</li>
+          <li>Demonstrate positive self-esteem</li>
+          <li>Increase development of gross motor skills, i.e. kick a ball while maintaining balance, agility in simple climbing tasks</li>
+          <li>Increase self-help skills, including mastery of toilet training and sanitary routines</li>
+          <li>Participate actively in group activities</li>
+          <li>Develop ability to work independently</li>
+          <li>Participate in a variety of dramatic play activities</li>
+          <li>Participate in classroom jobs</li>
+          <li>Use reasoning skills and imagination when planning ways to make things happen</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Dragonfly Room</h2>
+        <p>
+          Developmental screenings are conducted twice yearly, once in the beginning of the school year and once in the late Spring, to assess student progress and growth.
+          This allows teachers to assess skill levels and target specific developmental deficits for each child.
+          Daily communication is sent home on each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          Read, Play, Learn! encourages children to actively participate in a literacy-rich environment of playful activities that foster cognitive, language, social, and motor development.
+          It integrates all areas of development into a full spectrum of activities, all relating to one book, with accompanying modifications and adaptations to meet the needs of all children in the class.
+          Read, Play, Learn! Is a play-based curriculum that is designed not only to enhance emergent literacy skills but also to promote growth across all areas of development important to a young child.
+        </p>
+        <br>
+        <p>
+          The classroom utilizes a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our thearpy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Dragonfly Schedule</p>
+          <p class = customcolor>7:00-9:00 am Arrival/Free Centers</p>
+          <p class = customcolor>9:00-9:15 am Snack</p>
+          <p class = customcolor>9:15-9:45 am Circle Time</p>
+          <p class = customcolor>9:45-10:00 am Free Centers/Bathroom Break/Diaper Change</p>
+          <p class = customcolor>10:00-10:45am Gross Motor (Indoor or Outdoor)</p>
+          <p class = customcolor>10:45-11:15 am Story Time</p>
+          <p class = customcolor>11:15-12:00 am Lunch</p>
+          <p class = customcolor>12:00-2:00 pm Nap</p>
+          <p class = customcolor>2:00-2:30 pm Afternoon Snack/Bathroom Break/Diaper Change</p>
+          <p class = customcolor>2:30-3:00 pm Math/Science Lessonr</p>
+          <p class = customcolor>3:00-4:00 pm Gross Motor (Indoor or Outdoor)</p>
+          <p class = customcolor>4:00-6:00 pm Free Centers/ Prepare to go home</p>
+        </small>
+      </div>
+
+      <!--FIREFLY: PRE-K 4-->
+      <a href="#top" onclick="toggleDisplay('firefly')" class="noDecoration"><h3 class="button7">Firefly: Pre-K 4</h3></a>
+      <div class="container resource" id ="firefly">
+        <img src="capture/firefly.webp" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Firefly Room</h2>
+        <p>(Typically Early Toddlers, ages 4 - 5 years)</p>
+        <p>Maximum Class Size: 14 Students</p>
+        <p>Teacher-to-Student Ratio: 1-7</p>
+        <p>Curriculum: The DLM Early Childhood Express</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Gain confidence in learning through exploration</li>
+          <li>Participate in classroom jobs</li>
+          <li>Able to build a variety of structures with blocks</li>
+          <li>Participate in imaginary play</li>
+          <li>Help care for a variety of living things</li>
+          <li>Learn the letters in their name</li>
+          <li>Able to count to 20/30</li>
+          <li>Know the days of the week</li>
+          <li>Begin to visually identify upper-case letters and numbers</li>
+          <li>Begin to develop advanced fine motor skills, i.e. button clothes, lacing, use pincer grasp in writing/drawing</li>
+          <li>Identify basic weather conditions</li>
+          <li>Begin to understand the concept of seasons</li>
+          <li>Understand the parts of a book: title, author, etc.</li>
+          <li>Understand basic measurement concepts</li>
+          <li>Express emotions in positive and/or creative ways</li>
+          <li>Able to self-regulate actions and follow basic classroom rules/structure</li>
+          <li>Utilize creative expression through a variety of art materials</li>
+          <li>Develop more advanced gross motor skills, such as swinging independently, balancing skills, throwing/catching, etc.</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Firefly Room</h2>
+        <i><b>
+          <p class = customcolor>DHS Mandated ratio is 1:13</p>
+          <p class = customcolor>TN 3 Star ratio is 1:13</p>
+          <p class = customcolor>High Hopes teacher to student ratio is 1:7</p>
+        </b></i>
+        <p>
+          Developmental screenings are conducted twice yearly, once in the beginning of the school year and once in the late Spring, to assess student progress and growth.
+          This allows teachers to assess skill levels and target specific developmental deficits for each child.
+          Daily communication is sent home on each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          The DLM Early Childhood Express is a holistic, child-centered program that nurtures each child by offering carefully selected and carefully sequenced learning experiences, based on the latest neuroscience research.
+          It provides materials and ideas to foster the social-emotional, intellectual, and physical development of children, while nurturing the natural curiosity and sense of self that can serve as the foundation for a lifetime of learning.
+          The DLM Early Childhood Express is developed with the whole child in mind, providing opportunities to develop concrete skills through experiences with music, art, storytelling, and teacher-directed lessons that, in addition to skills development, emphasize practice and reflection.
+        </p>
+        <br>
+        <p>
+          The classroom utilizes a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive praise theme is used in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our thearpy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Firefly Schedule</p>
+          <p class = customcolor>7:00-9:00 am Arrival/Free Centers</p>
+          <p class = customcolor>9:00-9:10 am Snack</p>
+          <p class = customcolor>9:10-9:30 am Circle Time</p>
+          <p class = customcolor>9:30-10:15 am Small Group Activity*/Bathroom</p>
+          <p class = customcolor>10:15-11:00am Gross Motor (Indoor or Outdoor)</p>
+          <p class = customcolor>11:00-11:15 am Story Time</p>
+          <p class = customcolor>11:15-12:00 am Lunch</p>
+          <p class = customcolor>12:00-1:45 pm Nap</p>
+          <p class = customcolor>1:45-2:00 pm Bathroom Break</p>
+          <p class = customcolor>2:00-2:30 pm Small Group Activity*</p>
+          <p class = customcolor>2:30-2:45 pm Snack</p>
+          <p class = customcolor>2:45-3:30 pm Gross Motor (Indoor or Outdoor)</p>
+          <p class = customcolor>3:30-6:00 pm Free Centers and Directed Play</p>
+          <br>
+          <p class = customcolor>*Small group activities include one of the following: math, science, personal development, fine motor, art, and physical development.</p>
+        </small>
+      </div>
+
+      <!--GRASSHOPPER: PRE-K 5-->
+      <a href="#top" onclick="toggleDisplay('grasshopper')" class="noDecoration"><h3 class="button8">Grasshopper: Pre-K 5</h3></a>
+      <div class="container resource" id ="grasshopper">
+        <img src="capture/grasshopper.jpg" alt="ladybug" align="right" width = "250" height = "175">
+        <h2>Grasshopper Room</h2>
+        <p>(Typically Pre-K, ages 4 - 5 years)</p>
+        <p>Maximum Class Size: 16 Students</p>
+        <p>Teacher-to-Student Ratio: 1-8</p>
+        <p>Curriculum: The DLM Early Childhood Express and Handwriting Without Tears</p>
+        <hr>
+        <p>Classroom Concepts:</p>
+        <ul>
+          <li>Demonstrate independence in and contribution to the classroom setting</li>
+          <li>Show eagerness and curiosity as a learner</li>
+          <li>Introduce early reading skills</li>
+          <li>Learn and enhance concepts of nutrition</li>
+          <li>Begin to understand concepts of money</li>
+          <li>Complete small tasks independently</li>
+          <li>Demonstrate an understanding of a classroom schedule and rules</li>
+          <li>Increase mastery of handwriting skills, including writing their name and letters of alphabet</li>
+          <li>Acquire more concrete academic concepts through science experiments, collaborative art projects, group literacy activities, social studies, and many other subject areas</li>
+          <li>Enrich learning experiences through in depth explorations (cooking activities, special guests, computer exploration, interactive music experiences, practical skills projects, etc.) on our enrichment days</li>
+          <li>Move with control and balance to perform simple gross motor tasks, such as turning while running, climb on a variety of equipment, and throw overhand with accuracy</li>
+          <li>Increase ability to resolve conflicts independently</li>
+          <li>Actively participate in creative movement and drama</li>
+          <li>Participate actively in a fully inclusive environment, showing empathy and caring for others, as well as, begin to assist others in their endeavors</li>
+          <li>Introduce and begin to understand more complex divisions of social studies, math, and science</li>
+        </ul>
+        <h2 class = customfont>Added Values of the Grasshopper Room</h2>
+        <p>
+          Development screenings conducted twice a year, once in the beginning of the school year and once in the late Spring, to assess student progress and growth.
+          These screenings also allow teachers to assess skill levels and target specific developmental deficits for each child, as well as, allowing teachers to ensure that each child is prepared for kindergarten.
+          Nationally normed kindergarten readiness test administered during the summer before kindergarten.
+          Daily communication sent home on each child regarding activities, behavior, sleep routines, etc.
+        </p>
+        <br>
+        <b>Curriculum:</b>
+        <p>
+          The DLM Early Childhood Express is a holistic, child-centered program that nurtures each child by offering carefully selected and carefully sequenced learning experiences, based on the latest neuroscience research.
+          It provides materials and ideas to foster the social-emotional, intellectual, and physical development of children, while nurturing the natural curiosity and sense of self that can serve as the foundation for a lifetime of learning.
+          The DLM Early Childhood Express is developed with the whole child in mind, providing opportunities to develop concrete skills through experiences with music, art, storytelling, and teacher-directed lessons that, in addition to skills development, emphasize practice and reflection.
+          There is a heavy emphasis on kindergarten readiness skills such as letter and number recognition, handwriting skills, phonological awareness, and pre-reading skills.
+        </p>
+        <br>
+        <b>Supplementary Curriculum:</b>
+        <p>
+          Handwriting Without Tears; a curriculum that focuses on skills beginning with pre-writing concepts and following through developmental stages to writing letters and numbers.
+          Handwriting is taught every day by the teachers, with a staff occupational therapist coming in the classroom to supplement the learning through hand-strengthening activities and fine motor practice.
+        </p>
+        <br>
+        <p>
+          Age-appropriate technology is available, providing relevant skills for future classrooms in learning how the technology works, how we can gather information using the internet, and providing other learning-based games for the classroom.
+        </p>
+        <br>
+        <p>
+          The classroom utilizes a multi-sensory approach to learning, incorporating sensory activities daily.
+        </p>
+        <br>
+        <p>
+          In regards to discipline, first and foremost, a positive-praise theme is used, in order to foster good behavior within the classroom.
+          Redirection is also used consistently in our classrooms.
+          If behavior issues persist, the teachers work closely with the parents and our therapy staff to create an individualized behavior management/modification plan for the child.
+        </p>
+        <br>
+        <small>
+          <p class = customcolor>Grasshopper Schedule</p>
+          <p class = customcolor>7:00-8:25 am Arrival/Free Centers/Snack</p>
+          <p class = customcolor>8:25-8:30 am Clean Up</p>
+          <p class = customcolor>8:30-9:30 am Gross Motor/Outside</p>
+          <p class = customcolor>(9:00-9:30 am Tuesdays: Fine Motor with Occupational Therapist)</p>
+          <p class = customcolor>(9:30-10:00 am Fridays: Music Class with Music Therapist)</p>
+          <p class = customcolor>9:30-9:45 am Bathroom Break</p>
+          <p class = customcolor>9:45-10:00am First Circle Time</p>
+          <p class = customcolor>10:00-10:45 am Planned Activities (Handwriting, Math, Science, Art, Literacy, etc)</p>
+          <p class = customcolor>10:45-10:55 am Learning Centers</p>
+          <p class = customcolor>10:55-11:00 am Clean Up</p>
+          <p class = customcolor>11:00-11:30 am Gross Motor/Outside</p>
+          <p class = customcolor>11:30-11:35 am Wash Hands</p>
+          <p class = customcolor>11:35-12:05 pm Lunch</p>
+          <p class = customcolor>12:05-12:15 pm Bathroom Break</p>
+          <p class = customcolor>12:15-1:45 pm Nap</p>
+          <p class = customcolor>1:45-2:00 pm Bathroom Break</p>
+          <p class = customcolor>2:00-2:15 pm Second Circle Time</p>
+          <p class = customcolor>2:15-2:30 pm Gross Motor</p>
+          <p class = customcolor>2:30-2:45 pm Snack</p>
+          <p class = customcolor>2:45-3:00 pm Learning Centers</p>
+          <p class = customcolor>3:00-3:30 pm Gross Motor/Outside</p>
+          <p class = customcolor>3:30-4:00 pm Activity/ Free Play</p>
+          <p class = customcolor>4:00-4:30 pm Gross Motor/Outside</p>
+          <p class = customcolor>4:30-6:00 pm Activities/Free Play</p>
+          <br>
+        </small>
+      </div>
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

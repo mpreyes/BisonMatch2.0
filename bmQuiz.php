@@ -13,14 +13,14 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/global.css" rel="stylesheet">
+      <link href="css/global.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <style>
 
-    </style>
+
+
   </head>
 
   <body>
@@ -52,43 +52,44 @@
         <h1 class="text-center">Take the Loooove Quiz</h1>
       </div>
 
-<div class="container">
+
 
   <form>
+  <div class="container studentInfo">
   <div class="form-group">
-    <label for="exampleInputEmail1">Name:</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your first and last name" required="required">
+    <label for="studentName">Name:</label>
+    <input type="text" class="form-control" id="studentName" aria-describedby="emailHelp" placeholder="Enter your first and last name" required>
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">L#:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L number">
+    <label for="studentLNumber">L#:</label>
+    <input type="text" class="form-control" id="studentLNumber" aria-describedby="emailHelp" placeholder="Enter L number" required>
   </div>
 
   <div class="form-group">
-    <label for="exampleInputEmail1">LU Email Address:</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <label for="studentEmail">LU Email Address:</label>
+    <input type="email" class="form-control" id="studentEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
   </div>
    Gender: &nbsp;
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-    <label class="form-check-label" for="inlineRadio1">Male</label>
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="studentMale" value="option1">
+    <label class="form-check-label" for="studentMale">Male</label>
   </div>
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-    <label class="form-check-label" for="inlineRadio2">Female</label>
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="studentFemale" value="option2">
+    <label class="form-check-label" for="studentFemale">Female</label>
   </div>
 
   <div class="form-group">
    <label for="exampleFormControlTextarea1">Short Bio:</label>
-   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
+   <textarea class="form-control" id="studentBio" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
  </div>
 
-  <button type="submit" class="btn btn-primary text-center">Submit</button>
-</form>
+  <button type="submit" id="submitBtn" onClick="submitForm()"class="btn btn-primary text-center">Submit</button>
+</div>
 
 
 
-  <div class="card mb-3">
+  <div class="card mb-3 quizInfo">
   <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:500px;" alt="Cute appa">
 
   <div class="card-body">
@@ -125,12 +126,8 @@
     <a href="#" class="card-link"><button type="button" class="btn btn-primary">Next</button></a>
   </div>
 </div>
-
-
+</form>
     </main>
-
-
-
 
 
     <footer class="footer">
@@ -142,9 +139,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/quizStuff.js"></script>
   </body>
 </html>
