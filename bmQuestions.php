@@ -61,9 +61,10 @@ function Next(){
 
     <!-- Begin page content -->
 <main role="main" class="container">
-
-  <div class="card mb-3 hide" id="0">
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:500px;" alt="Cute appa">
+<br>
+  <div class="card mb-3" id="0">
+    <h1 style="text-align: center;">Question 1</h1>
+    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>

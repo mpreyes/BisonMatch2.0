@@ -61,31 +61,31 @@
 <form method="post" action="bmQuestions.php">
   <div class="container" id="frm">
     <div class="form-group">
-      <label for="exampleInputEmail1">Name:</label>
-      <input type="text" class="form-control" id="test" aria-describedby="emailHelp" placeholder="Enter your first and last name" required>
+      <label for="Name">Name:</label>
+      <input type="text" class="form-control" id="Name" name="Name" aria-describedby="emailHelp" placeholder="Enter your first and last name" required>
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">L#:</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L number" required>
+      <label for="L#">L#:</label>
+      <input type="text" class="form-control" id="L#" name="L#" aria-describedby="emailHelp" placeholder="Enter L number" required>
     </div>
 
     <div class="form-group">
-      <label for="exampleInputEmail1">LU Email Address:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+      <label for="Email">LU Email Address:</label>
+      <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
     </div>
      Gender: &nbsp;
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
-      <label class="form-check-label" for="inlineRadio1">Male</label>
+      <input class="form-check-input" type="radio" name="Gender" value="Male" id="Gender" value="option1" required>
+      <label class="form-check-label" for="Gender">Male</label>
     </div>
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
-      <label class="form-check-label" for="inlineRadio2">Female</label>
+      <input class="form-check-input" type="radio" name="Gender" value="Femail" id="Gender" value="option2" required>
+      <label class="form-check-label" for="Gender">Female</label>
     </div>
 
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Short Bio:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
+      <label for="Bio">Short Bio:</label>
+      <textarea class="form-control" id="Bio" name="Bio" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
     </div>
 
     <button class="btn btn-primary text-center" type="submit">Submit</button>
