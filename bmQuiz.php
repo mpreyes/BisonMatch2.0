@@ -55,35 +55,42 @@
 <div class="container">
 
   <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Name:</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required="required">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">L#:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L#" required="required">
-    </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name:</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your first and last name" required="required">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">L#:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L number">
+  </div>
 
-    <div class="form-group">
-      <label for="exampleInputEmail1">LU Email Address:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required="required">
-    </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">LU Email Address:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+   Gender: &nbsp;
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">Male</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">Female</label>
+  </div>
 
-    <div class="form-group">
-     <label for="exampleFormControlTextarea1">Short Bio:</label>
-     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter social media handles" rows="2"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  <div class="form-group">
+   <label for="exampleFormControlTextarea1">Short Bio:</label>
+   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
+ </div>
 
-</div>
-
-
+  <button type="submit" class="btn btn-primary text-center">Submit</button>
+</form>
 
 
 
   <div class="card mb-3">
   <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:500px;" alt="Cute appa">
+
   <div class="card-body">
     <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>
   </div>
