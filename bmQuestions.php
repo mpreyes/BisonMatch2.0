@@ -17,7 +17,14 @@
 
     <!-- Custom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
+<script type="text/javascript">
+function Next(){
+  document.getElementById('frm').style.display = "none";
+  //document.getElementById(i).style.display = "inline";
+}
+</script>
 
 <style>
 .frm{
@@ -54,45 +61,51 @@
 
     <!-- Begin page content -->
 <main role="main" class="container">
-  <div class="mt-3">
-    <h1 class="text-center">Take the Loooove Quiz</h1>
+
+  <div class="card mb-3 hide" id="0">
+    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:500px;" alt="Cute appa">
+
+    <div class="card-body">
+      <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">A full hour early. I'm helping him set up.</label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">15 minutes early. I'm punctual.</label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio3" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio3">15 minutes late. Who gets to a party on time anyways?</label>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio4" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio4">An hour late. I like making an entrance.</label>
+        </div>
+      </li>
+    </ul>
+    <div class="card-body text-center">
+      <a href="#" class="card-link"><button type="button" class="btn btn-primary">Next</button></a>
+    </div>
   </div>
 
-<form method="post" action="bmQuestions.php">
-  <div class="container" id="frm">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Name:</label>
-      <input type="text" class="form-control" id="test" aria-describedby="emailHelp" placeholder="Enter your first and last name">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">L#:</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter L number">
-    </div>
-
-    <div class="form-group">
-      <label for="exampleInputEmail1">LU Email Address:</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    </div>
-     Gender: &nbsp;
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">Male</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">Female</label>
-    </div>
-
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Short Bio:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
-    </div>
-
-    <button class="btn btn-primary text-center" type="submit">Submit</button>
-  </div>
 </form>
 
 </main>
+
+
+
+
 
     <footer class="footer">
       <div class="container">
