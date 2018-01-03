@@ -19,14 +19,6 @@
     <link href="sticky-footer-navbar.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
-<style>
-.frm{
-  display: inline;
-}
-.hide{
-  display:none;
-}
-</style>
 </head>
 
   <body>

@@ -27,9 +27,6 @@ function Next(){
 </script>
 
 <style>
-.frm{
-  display: inline;
-}
 .hide{
   display:none;
 }
