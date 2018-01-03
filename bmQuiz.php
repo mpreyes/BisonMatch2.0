@@ -58,8 +58,8 @@
       <div class="card" style="width: 40rem;">
   <img class="card-img-top" src="images/cuteappa.png" alt="Cute appa">
   <div class="card-body">
-    <h5 class="card-title text-center">Question</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title text-center">Helloooo</h5>
+    <p class="card-text">Here is le question</p>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Cras justo odio</li>
