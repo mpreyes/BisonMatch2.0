@@ -54,9 +54,8 @@
         <h1 class="text-center">Welcome to BisonMatch! Version 2.0</h1>
       </div>
 
-
-      <div class="card" style="width: 40rem;">
-  <img class="card-img-top" src="images/cuteappa.png" alt="Cute appa">
+      <div class="card mb-3" >
+  <img class="card-img-top" src="images/cuteappa.png"  width="450px" alt="Cute appa">
   <div class="card-body">
     <h5 class="card-title text-center">Helloooo</h5>
     <p class="card-text">Here is le question</p>
