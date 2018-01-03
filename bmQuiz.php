@@ -20,8 +20,6 @@
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <style>
 
-
-
     </style>
   </head>
 
@@ -51,28 +49,92 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="mt-3">
-        <h1 class="text-center">Welcome to BisonMatch! Version 2.0</h1>
+        <h1 class="text-center">Take the Loooove Quiz</h1>
       </div>
 
-      <div class="card mb-3 border-secondary">
+<div class="container">
+
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">L#:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">LU Email Address:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">LU Email Address:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+   <label for="exampleFormControlTextarea1">Short Bio:</label>
+   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter social media handles" rows="2"></textarea>
+ </div>
+
+
+
+
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+
+
+
+      <div class="card mb-3">
   <img class="card-img-top" src="images/cuteappa.png" width="50px" alt="Cute appa">
   <div class="card-body">
-    <h5 class="card-title text-center">Helloooo</h5>
-    <p class="card-text">Here is le question</p>
+    <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item">
+      <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio1">A full hour early. I'm helping him set up.</label>
+</div>
+    </li>
+    <li class="list-group-item">
+      <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">15 minutes early. I'm punctual.</label>
+</div>
+    </li>
+    <li class="list-group-item">
+      <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio3">15 minutes late. Who gets to a party on time anyways?</label>
+</div>
+    </li>
+    <li class="list-group-item">
+      <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio4">An hour late. I like making an entrance.</label>
+</div>
+    </li>
+
   </ul>
   <div class="card-body text-center">
     <a href="#" class="card-link"><button type="button" class="btn btn-primary">Next</button></a>
   </div>
 </div>
-
-
-
 
 
     </main>

@@ -34,7 +34,6 @@
               <a class="nav-link" href="about.php">About BisonMatch</a>
             </li>
           </ul>
-
         </div>
       </nav>
     </header>
@@ -52,7 +51,6 @@
         <span class="text-muted">&copy;2018 Lipscomb University's student ACM chapter <span class="text-muted float-right">Find the project on GitHub: <a href="https://github.com/mpreyes/BisonMatch">BisonMatch</a></span>
       </div>
     </footer>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
