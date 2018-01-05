@@ -63,7 +63,8 @@ function Next(){
 <main role="main" class="container">
 <br>
   <div class="card mb-3" id="0">
-    <h1 style="text-align: center;">Question 1</h1>
+
+    <div class="card-header"> Question: 1/10 </div>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
@@ -72,26 +73,26 @@ function Next(){
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio1" name="Radio1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio1">A full hour early. I'm helping him set up.</label>
+          <input type="radio" id="question1" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="question1">A full hour early. I'm helping him set up.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio2" name="Radio1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio2">15 minutes early. I'm punctual.</label>
+          <input type="radio" id="question2" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="question2">15 minutes early. I'm punctual.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio3" name="Radio1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio3">15 minutes late. Who gets to a party on time anyways?</label>
+          <input type="radio" id="question3" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="question3">15 minutes late. Who gets to a party on time anyways?</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio4" name="Radio1" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio4">An hour late. I like making an entrance.</label>
+          <input type="radio" id="question4" name="Radio1" class="custom-control-input">
+          <label class="custom-control-label" for="question4">An hour late. I like making an entrance.</label>
         </div>
       </li>
     </ul>
