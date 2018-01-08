@@ -28,18 +28,7 @@
 }
 </style>
 
-<!-- <script>
-
-
-function nextQuestion(x){
-let i = 0;
-if(i < 9){
-  i++;
-}
-console.log("question: "+ i);
-}
-</script> -->
-
+<script> let i =0;</script>
 </head>
 
   <body>
@@ -66,98 +55,51 @@ console.log("question: "+ i);
     </header>
 
     <!-- Begin page content -->
+
 <main role="main" class="container">
    <!-- FIXME: add css instead of br-->
 <br>
 
-
-  <div class="card mb-3" id="0">
-    <div class="card-header"> Question: 1/10 </div>
+  <div class="card mb-3" id="i">
+    <div class="card-header" id="qNo"></div>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ"></h5>
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="ans1" name="answer1" value="1" class="custom-control-input">
-          <label class="custom-control-label" for="ans1">A full hour early. I'm helping him set up.</label>
+          <input type="radio" id="ans1" name="quizAns" value="1" class="custom-control-input">
+          <label class="custom-control-label" for="ans1" id="a1"></label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="ans2" name="answer1" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans2">15 minutes early. I'm punctual.</label>
+          <input type="radio" id="ans2" name="quizAns" value="2" class="custom-control-input">
+          <label class="custom-control-label" for="ans2" id="a2"></label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="ans3" name="answer1" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans3">15 minutes late. Who gets to a party on time anyways?</label>
+          <input type="radio" id="ans3" name="quizAns" value="3" class="custom-control-input">
+          <label class="custom-control-label" for="ans3" id="a3"></label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
-          <input type="radio" id="ans4" name="answer1" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans4">An hour late. I like making an entrance.</label>
+          <input type="radio" id="ans4" name="quizAns" value="4" class="custom-control-input">
+          <label class="custom-control-label" for="ans4" id="a4"></label>
         </div>
       </li>
     </ul>
     <div class="card-body text-center">
-          <button type="button" onclick="previousQuestion()" class="btn btn-danger">Back</button>
-    <button type="button" onclick="nextQuestion()" class="btn btn-primary">Next</button>
+          <button type="button" class="btn btn-danger" onclick="backQ()">Back</button>
+    <button type="button" class="btn btn-primary" onclick="nextQ()">Next</button>
     </div>
   </div>
 
-
-<!--
-  <div class="card mb-3" id="1">
-    <div class="card-header"> Question: 1/10 </div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
-
-    <div class="card-body">
-      <h5 class="card-title">Your friend is throwing a party at his house. You arrive:</h5>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">
-        <div class="custom-control custom-radio">
-          <input type="radio" id="answer1" name="answer1" class="custom-control-input">
-          <label class="custom-control-label" for="answer1">A full hour early. I'm helping him set up.</label>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="custom-control custom-radio">
-          <input type="radio" id="answer2" name="answer2" class="custom-control-input">
-          <label class="custom-control-label" for="answer2">15 minutes early. I'm punctual.</label>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="custom-control custom-radio">
-          <input type="radio" id="answer3" name="answer3" class="custom-control-input">
-          <label class="custom-control-label" for="answer3">15 minutes late. Who gets to a party on time anyways?</label>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="custom-control custom-radio">
-          <input type="radio" id="answer4" name="answer4" class="custom-control-input">
-          <label class="custom-control-label" for="answer4">An hour late. I like making an entrance.</label>
-        </div>
-      </li>
-    </ul>
-    <div class="card-body text-center">
-    <button type="button" onClick="Next()" class="btn btn-primary">Next</button>
-    </div>
-  </div> -->
-
-<!-- </form> -->
-
-
 </main>
-
-
-
-
 
     <footer class="footer">
       <div class="container">
@@ -169,11 +111,10 @@ console.log("question: "+ i);
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
+  <script src="quizStuff.js" type="text/javascript"></script>
     <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
-          <script src="quizStuff.js" type="text/javascript"></script>
 
   </body>
 </html>
