@@ -99,7 +99,7 @@ So take the test, donate $2.00, and find your date for Valentine's Day!
 
       <div class="container text-center">
         <p class="lead"> Ready to start? </p>
-        <a href="bmQuiz.php"><button type="button" class="btn btn-danger">Find me love</button></a>
+        <a href="studentInfo.php"><button type="button" class="btn btn-danger">Find me love</button></a>
 
       </div>
 

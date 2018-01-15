@@ -28,8 +28,10 @@
 }
 </style>
 
-<script> let i =0;</script>
+
+
 </head>
+<script> let i =0; </script>
 
   <body>
 
@@ -107,14 +109,59 @@
       </div>
     </footer>
 
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="quizStuff.js" type="text/javascript"></script>
+
     <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
+    <script src="quizStuff.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
+
+
+<?php
+
+ session_start();
+// mysql_connect('localhost', 'mpreyes', '') or die (mysql_error());
+// mysql_select_database('BisonMatch') or die (mysql_error());
+// if($_POST['submit']){
+$servername = "localhost";
+$username = "bisonConnect";
+$password = "bison1";
+$databasename = "BisonMatch";
+
+$conn = new mysqli($servername, $username, $password,$databasename);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+$studentName = $_GET['Name'];
+$studentLNo = $_GET['L#'];
+$studentEmail = $_GET['Email'];
+$studentGender = $_GET['Gender'];
+$studentBio = $_GET['Bio'];
+
+$query = "INSERT INTO LUStudent (Name, LNumber, EmailAddress, Gender, Bio, Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7, Ans8, Ans9, Ans10)
+VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '1','2','3','4','5','6','7','8','9','10')";
+
+if($conn->query($query) === TRUE) {
+  echo "Inserted student successfully";
+}
+else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+ // mysql_query($query);
+
+ // echo "Thanks for the info";
+
+$conn->close();
+
+//}
+?>

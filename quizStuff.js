@@ -20,6 +20,7 @@ let finishedQuiz = false;
 
 let AnsArr = [];
 let questionArr = [];
+let i = 0;
 let question1 = new quizQuestion(1,"Your friend is throwing a party at his house. You arrive:","img","A full hour early. I'm helping him set up.","15 minutes early. I'm punctual.","15 minutes late. Who gets to a party on time anyways?","An hour late. I like making an entrance.");
 let question2 = new quizQuestion(2,"Question","img","opt1","opt2","opt3","opt4");
 let question3 = new quizQuestion(3,"Question","img","opt1","opt2","opt3","opt4");
@@ -54,9 +55,13 @@ let radQuestions = document.getElementsByName("quizAns");
 
 console.log("len " + radQuestions.length);
 
+
 function nextQ(){
 hitNext = true;
   console.log("user hit next" + i);
+  if(i == 9){
+    alert("Woo finished quiz!");
+  }
   if(i < 9){
     i++;
   document.getElementById("qNo").innerHTML = "Question " + questionArr[i].quizNo +"/10";
@@ -71,6 +76,7 @@ for(let j =0; j < radQuestions.length;j++ ){
    AnsArr.push(radQuestions[j].value);
  }
 }
+
 
 console.log("array " + AnsArr.toString());
 
@@ -93,9 +99,7 @@ hitBack = true;
 }
 
 console.log("quizNo" + questionArr[0].quizNo);
-if(i == 9){
-  alert("Woo finished quiz!");
-}
+
 
     // document.getElementById("qNo").innerHTML = "Question " + questionArr[i].quizNo +"/10";
     // document.getElementById("qQ").innerHTML =  questionArr[i].quizQ;
