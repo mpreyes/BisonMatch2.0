@@ -31,7 +31,7 @@
 
 
 </head>
-<script> let i =0; </script>
+<!-- <script> let i =0; </script> -->
 
   <body>
 
@@ -58,11 +58,12 @@
 
     <!-- Begin page content -->
 
+
 <main role="main" class="container">
    <!-- FIXME: add css instead of br-->
 <br>
-
-  <div class="card mb-3" id="i">
+<form method="post" action="index.php">
+  <div class="card mb-3">
     <div class="card-header" id="qNo"></div>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
@@ -98,9 +99,10 @@
     <div class="card-body text-center">
           <button type="button" class="btn btn-danger" onclick="backQ()">Back</button>
     <button type="button" class="btn btn-primary" onclick="nextQ()">Next</button>
+    <button class="btn btn-primary text-center" type="submit" name="submit" value="submit">Submit</button>
     </div>
   </div>
-
+</form>
 </main>
 
     <footer class="footer">
@@ -147,9 +149,10 @@ $studentLNo = $_GET['L#'];
 $studentEmail = $_GET['Email'];
 $studentGender = $_GET['Gender'];
 $studentBio = $_GET['Bio'];
+$ans1 = $_GET['quizAns'];
 
 $query = "INSERT INTO LUStudent (Name, LNumber, EmailAddress, Gender, Bio, Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7, Ans8, Ans9, Ans10)
-VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '1','2','3','4','5','6','7','8','9','10')";
+VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '$ans1','2','3','4','5','6','7','8','9','10')";
 
 if($conn->query($query) === TRUE) {
   echo "Inserted student successfully";

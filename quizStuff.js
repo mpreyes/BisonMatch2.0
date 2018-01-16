@@ -17,10 +17,10 @@ class quizQuestion {
 let hitNext = false;
 let hitBack = false;
 let finishedQuiz = false;
-
 let AnsArr = [];
 let questionArr = [];
-let i = 0;
+ i = 0;
+ let k = 0;
 let question1 = new quizQuestion(1,"Your friend is throwing a party at his house. You arrive:","img","A full hour early. I'm helping him set up.","15 minutes early. I'm punctual.","15 minutes late. Who gets to a party on time anyways?","An hour late. I like making an entrance.");
 let question2 = new quizQuestion(2,"Question","img","opt1","opt2","opt3","opt4");
 let question3 = new quizQuestion(3,"Question","img","opt1","opt2","opt3","opt4");
@@ -44,6 +44,7 @@ questionArr.push(question9);
 questionArr.push(question10);
 
 
+
 document.getElementById("qNo").innerHTML = "Question " + questionArr[i].quizNo +"/10";
 document.getElementById("qQ").innerHTML =  questionArr[i].quizQ;
 document.getElementById("a1").innerHTML = questionArr[i].option1;
@@ -56,13 +57,20 @@ let radQuestions = document.getElementsByName("quizAns");
 console.log("len " + radQuestions.length);
 
 
+
 function nextQ(){
-hitNext = true;
-  console.log("user hit next" + i);
-  if(i == 9){
-    alert("Woo finished quiz!");
+  if(k == 10){
+    //hide next and back buttons
+    //display submit button
+    console.log("finished quiz");
   }
-  if(i < 9){
+  else if(k < 10){
+      k++;
+    addQuestion();
+  }
+
+    if(i < 9){
+          console.log("next Question" + i);
     i++;
   document.getElementById("qNo").innerHTML = "Question " + questionArr[i].quizNo +"/10";
   document.getElementById("qQ").innerHTML =  questionArr[i].quizQ;
@@ -70,17 +78,25 @@ hitNext = true;
   document.getElementById("a2").innerHTML = questionArr[i].option2;
   document.getElementById("a3").innerHTML = questionArr[i].option3;
   document.getElementById("a4").innerHTML = questionArr[i].option4;
+
 }
-for(let j =0; j < radQuestions.length;j++ ){
- if(radQuestions[j].checked){
-   AnsArr.push(radQuestions[j].value);
+
+
+
+}
+
+
+function addQuestion(){
+  console.log("ans arr len" +AnsArr.length);
+
+  for(let j =0; j < radQuestions.length;j++ ){
+   if(radQuestions[j].checked){
+     AnsArr.push(radQuestions[j].value);
+   }
  }
+   console.log("forward array " +  AnsArr.toString());
 }
 
-
-console.log("array " + AnsArr.toString());
-
-}
 
 function backQ(){
 
@@ -98,7 +114,7 @@ hitBack = true;
  AnsArr.pop();
 }
 
-console.log("quizNo" + questionArr[0].quizNo);
+// console.log("quizNo" + questionArr[0].quizNo);
 
 
     // document.getElementById("qNo").innerHTML = "Question " + questionArr[i].quizNo +"/10";
