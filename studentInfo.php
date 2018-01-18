@@ -21,12 +21,12 @@
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
 <?php
- session_start();
-$_SESSION['Name'] = $studentName;
-$_SESSION['L#'] = $studentLNo;
-$_SESSION['Email'] = $studentEmail;
-$_SESSION['Gender'] = $studentGender;
-$_SESSION['Bio'] = $studentBio;
+//  session_start();
+// $_SESSION['Name'] = $studentName;
+// $_SESSION['L#'] = $studentLNo;
+// $_SESSION['Email'] = $studentEmail;
+// $_SESSION['Gender'] = $studentGender;
+// $_SESSION['Bio'] = $studentBio;
 
 ?>
 
@@ -59,10 +59,10 @@ $_SESSION['Bio'] = $studentBio;
     <!-- Begin page content -->
 <main role="main" class="container">
   <div class="mt-3">
-    <h1 class="text-center">Take the Loooove Quiz</h1>
+    <h1 class="text-center">But first, some info...</h1>
   </div>
 
-<form method="get" action="bmQuestions.php">
+<form method="post" action="bmQuestions.php">
   <div class="container" id="frm">
     <div class="form-group">
       <label for="Name">Name:</label>
@@ -91,8 +91,9 @@ $_SESSION['Bio'] = $studentBio;
       <label for="Bio">Short Bio:</label>
       <textarea class="form-control" id="Bio" name="Bio" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
     </div>
-
-    <button class="btn btn-primary text-center" type="submit" name="submit" value="submit">Submit</button>
+    <div class="text-center">
+    <button class="btn btn-primary" type="submit" name="submit" value="submit">Next</button>
+  </div>
   </div>
 </form>
 
