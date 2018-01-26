@@ -3,8 +3,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $servername = "localhost";
-$username = "bisonConnect";
-$password = "bison1";
+//$username = "bisonConnect";
+//$password = "bison1";
+$username = "root";
+$password = "toor";
 $databasename = "BisonMatch";
 
 $conn = new mysqli($servername, $username, $password,$databasename);
@@ -125,15 +127,17 @@ if(isset($_POST['search']) && !empty($_POST['search'])){
       $id = $row['LNumber'];
       $name = $row['Name'];
       $email = $row['EmailAddress'];
+      $gender = $row['Gender'];
 
       //  echo "\n$rowinfo"
       $output .= '<tr><td>'
       .$id. '</td><td> '.$name. '</td><td>'.$email. '</td>
        <td><form action="sendEmail.php" method="post">
     <input type="submit" name="send_results" value="Send Results"/>
-    <input type="hidden" name="email" value='$email'/>
-    <input type="hidden" name="name" value='$name' />
-    <input type="hidden" name="id" value='$id' />
+    <input type="hidden" name="email" value='.$email.'/>
+    <input type="hidden" name="name" value='.$name.' />
+    <input type="hidden" name="id" value='.$id.' />
+    <input type="hidden" name="gender" value='.$gender.' />
      </form></td>';
     }
 

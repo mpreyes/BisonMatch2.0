@@ -1,46 +1,49 @@
-<!DOCTYPE html>
-
-<html>
-<p> Hello ? </p>
-</html>
-
 <?php
 
- #session_start();
+ session_start();
 
  require_once 'phpmailer/PHPMailerAutoload.php';
- echo "anyone here?"
+ require_once './getResultMatch.php';
+ #echo "anyone here?";
 
- $result = $_POST['button_pressed'];
+ $name = $_POST['name'];
+ $email = $_POST['email'];
+ $LNo = $_POST['id'];
+ $gender = $_POST['gender'];
 
- result = explode("-",$result);
-//
-// $email = $result[0];
-// $name = $result[1];
-// $L = $result[2];
-// echo "email" . $email;
-// //
-// $m = new PHPMailer;
-// $m->isSMTP();
-// $m->SMTPAuth = true;
-// $m->Host = 'smtp.gmail.com';
-// $m->Username = 'reyes.madelyn.mr@gmail.com';
-// $m->Password = 'were2345';
-// $m->SMTPSecure = 'ssl';
-// $m->Port = 465;
-//
-// $m->isHTML();
-// $m->Subject = 'BisonMatch Results';
-// $m->Body = 'From: ' . $name . ' ('. $email . ')<p>' . $L . '</p>';
-//
-// $m->FromName = 'BisonMatch Sent';
-//
-// $m->AddAddress('reyes.madelyn.mr@gmail.com','Madelyn Reyes');
-//
-// $location = "index.php"
-// echo "Did you work?";
-// if($m->send()){
-//   header('Location: $location');
-//   die();
-// }
+//getResult($gender, $LNo);
+
+#echo   $name;
+#echo  $email;
+#echo   $LNo;
+
+$m = new PHPMailer;
+$m->isSMTP();
+$m->SMTPAuth = true;
+$m->Host = 'smtp.gmail.com';
+$m->Username = 'reyes.madelyn.mr@gmail.com';
+$m->Password = 'were2345';
+$m->SMTPSecure = 'ssl';
+$m->Port = 465;
+
+$m->isHTML();
+$m->Subject = 'BisonMatch Results';
+$m->Body = 'Dear, ' . $name . ' ';
+
+$m->FromName = 'BisonMatch';
+
+$m->AddAddress('nrrutledge@mail.lipscomb.edu',$name);
+
+$location = "index.php";
+#echo "Did you work?";
+$m->send()
+  #header('Location: /adminPanel.php');
+  #echo "won";
+  #die();
  ?>
+
+ <html>
+<head>
+<meta http-equiv="refresh" content="0;url=./adminPanel.php" />
+</head>
+</html>

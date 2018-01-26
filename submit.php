@@ -30,6 +30,7 @@ $ans9 = $_POST['answer9'];
 $ans10 = $_POST['answer10'];
 
 
+
 // $query = "SELECT * FROM `administrator`";
 $query = "INSERT INTO LUStudent (Name, LNumber, EmailAddress, Gender, Bio, Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7, Ans8, Ans9, Ans10) VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '$ans1','$ans2','$ans3','$ans4','$ans5','$ans6','$ans7','$ans8','$ans9','$ans10')";
 
