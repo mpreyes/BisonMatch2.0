@@ -19,6 +19,17 @@
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <style>
 
+      .col-md {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .bM {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
 
 
     </style>
@@ -55,51 +66,64 @@
 
 
 
-      <div class="container">
+      <!-- <div class="container">
         <h3 class="text-center">What is BisonMatch?</h3>
  &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
- It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life (this is Lipscomb after all)!
-      </div>
+ It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life! (this is Lipscomb after all)
+      </div> -->
 
-      <div class="container">
+<!-- <div class="container"> -->
+<div class="bM">
+<div class="card">
+  <h5 class="card-header">What is BisonMatch?</h5>
+  <div class="card-body">
+    <h5 class="card-title">Your ticket to a date for Valentines day</h5>
+    <p class="card-text"> &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
+     It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life! (this is Lipscomb after all)</p>
+
+  </div>
+</div>
+</div>
+
+
         <h3 class="text-center">How does it work?</h3>
-All you have to do is answer a few questions, then before Valentine's Day comes around you will be given the option of purchasing your results.
+<!-- All you have to do is answer a few questions, then before Valentine's Day comes around you will be given the option of purchasing your results.
 The proceeds from your purchase will go to raising funds for the ACM of Lipscomb University.
 So take the test, donate $2.00, and find your date for Valentine's Day!
-      </div>
+      </div> -->
+
 
       <div class="row">
         <div class="col-md">
-
-          <div class="card text-center" style="width: 18rem;">
+          <div class="card text-center" style="width: fill; height: 12rem;">
       <div class="card-body">
-        <h5 class="card-title">Fill out the quiz</h5>
-        <p class="card-text">Answer ten questions put together by one of the psychology students here at Lipscomb.</p>
+        <h5 class="card-title">Fill out the Quiz</h5>
+        <p class="card-text">Answer ten questions put together by some of the finest physcology minds at Lipscomb.</p>
       </div>
     </div>
         </div>
         <div class="col-md">
-          <div class="card" style="width: 18rem;">
+          <div class="card text-center" style="width: fill; height: 12rem;">
     <div class="card-body">
-      <h5 class="card-title">Purchase your results</h5>
-      <p class="card-text">The proceeds from your purchase will go to raising funds for the ACM of Lipscomb University. </p>
+      <h5 class="card-title">Purchase Your Results</h5>
+      <p class="card-text">Sometime before Valentines Day, you will be given the option to purchase the results for $2.00. </p>
     </div>
   </div>
 </div>
 <div class="col-md">
-  <div class="card" style="width: 18rem;">
+  <div class="card text-center" style="width: fill; height: 12rem;">
 <div class="card-body">
-<h5 class="card-title">Find your date for Valentines Day</h5>
-<p class="card-text"> Blah blah</p>
+<h5 class="card-title">Find Your Date for Valentines Day</h5>
+<p class="card-text">You will receive the names and info of 10 students whom you can contact to set up a date.</p>
 </div>
 </div>
 </div>
 
       </div>
 
-      <div class="container text-center">
-        <p class="lead"> Ready to start? </p>
-        <a href="studentInfo.php"><button type="button" class="btn btn-danger">Find me love</button></a>
+      <div class="container text-center bM">
+        <p class="lead"> Ready to start?</p>
+        <a href="studentInfo.php"><button type="button" class="btn btn-lg btn-danger">Find me love</button></a>
 
       </div>
 
@@ -121,58 +145,3 @@ So take the test, donate $2.00, and find your date for Valentine's Day!
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
-<?php
-
- // session_start();
-// mysql_connect('localhost', 'mpreyes', '') or die (mysql_error());
-// mysql_select_database('BisonMatch') or die (mysql_error());
-// if($_POST['submit']){
-$servername = "localhost";
-$username = "bisonConnect";
-$password = "bison1";
-$databasename = "BisonMatch";
-
-$conn = new mysqli($servername, $username, $password,$databasename);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-
-$studentName = $_POST['Name'];
-$studentLNo = $_POST['L#'];
-$studentEmail = $_POST['Email'];
-$studentGender = $_POST['Gender'];
-$studentBio = $_POST['Bio'];
-$ans1 = $_POST['answer1'];
-$ans2 = $_POST['answer2'];
-$ans3 = $_POST['answer3'];
-$ans4 = $_POST['answer4'];
-$ans5 = $_POST['answer5'];
-$ans6 = $_POST['answer6'];
-$ans7 = $_POST['answer7'];
-$ans8 = $_POST['answer8'];
-$ans9 = $_POST['answer9'];
-$ans10 = $_POST['answer10'];
-
-
-$query = "INSERT INTO LUStudent (Name, LNumber, EmailAddress, Gender, Bio, Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7, Ans8, Ans9, Ans10)
-VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '$ans1','$ans2','$ans3','$ans4','$ans5','$ans6','$ans7','$ans8','$ans9','$ans10')";
-
-if($conn->query($query) === TRUE) {
-  echo "Inserted student successfully";
-  echo $ans1;
-}
-else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
- // mysql_query($query);
-
- // echo "Thanks for the info";
-
-$conn->close();
-
-//}
-?>

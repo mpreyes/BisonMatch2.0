@@ -61,14 +61,14 @@
 
 <main role="main" class="container">
 <br>
-<form method="post" action="">
+<form method="post" action="submit.php">
 
   <div class="card mb-3" id="q1">
     <div class="card-header" id="qNo">Question 1/10</div>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">Your friend is throwing a party at his house. You arrive:</h5>
     </div>
     <ul class="list-group list-group-flush">
 
@@ -98,7 +98,7 @@
       </li>
     </ul>
     <div class="card-body text-center">
-          <button type="button" class="btn btn-danger" onclick=" ">Back</button>
+          <a href="studentInfo.php"><button type="button" class="btn btn-danger">Back</button></a>
     <button type="button" class="btn btn-primary" onclick='document.getElementById("q1").style.display = "none";
     document.getElementById("q2").style.display = "block";'>Next</button>
         <!-- <button class="btn btn-primary text-center" type="submit" name="submit" value="submit">Next</button> -->
@@ -110,32 +110,32 @@
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">If you could have dinner with any past president, dead or alive, who would it be?</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans21" name="answer2" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans21" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans21" id="a1">Abraham Lincoln (might need to be changed)</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans22" name="answer2" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans22" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans22" id="a2">Franklin D. Roosevelt</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans23" name="answer2" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans23" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans23" id="a3">Barack Obama</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans24" name="answer2" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans24" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans24" id="a4">Ronald Reagan</label>
         </div>
       </li>
     </ul>
@@ -154,32 +154,32 @@ document.getElementById("q3").style.display = "block";'>Next</button>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">The new iphone 11 just came out. You:</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item" id="field1">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans31" name="answer3" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans31" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans31" id="a1">Buy it as soon as it drops. (insert aside here)</label>
         </div>
       </li>
       <li class="list-group-item" id="field2">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans32" name="answer3" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans32" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans32" id="a2">Wait a couple of months for it. I'll get it at a cheaper price.</label>
         </div>
       </li>
       <li class="list-group-item" id="field3">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans33" name="answer3" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans33" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans33" id="a3">I’ll get it when the iphone 12 comes out. That’s when the price is at its prime.</label>
         </div>
       </li>
       <li class="list-group-item" id="field4">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans34" name="answer3" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans34" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans34" id="a4">I still have my iphone 4. I won’t spend a penny on a new one until mine breaks.</label>
         </div>
       </li>
     </ul>
@@ -198,32 +198,32 @@ document.getElementById("q4").style.display = "block";'>Next</button>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">You’re hanging out at a coffee shop with a friend. You’re most likely to talk about:</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item" id="field1">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans41" name="answer4" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans41" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans41" id="a1">Jesus. Heart-to-hearts or nothing!</label>
         </div>
       </li>
       <li class="list-group-item" id="field2">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans42" name="answer4" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans42" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans42" id="a2">Something intellectual. (maybe a better aside)</label>
         </div>
       </li>
       <li class="list-group-item" id="field3">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans43" name="answer4" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans43" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans43" id="a3">Hobbies/common interests. (OMG did you see what happened on the bachelor last night??)</label>
         </div>
       </li>
       <li class="list-group-item" id="field4">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans44" name="answer4" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans44" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans44" id="a4">Life issues/latest gossip.</label>
         </div>
       </li>
     </ul>
@@ -243,32 +243,32 @@ document.getElementById("q5").style.display = "block";'>Next</button>
     <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">On a typical Saturday, you’ll find me:</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans51" name="answer5" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans51" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans51" id="a1">Probably studying. That MCAT ain’t gonna pass itself.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans52" name="answer5" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans52" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans52" id="a2">Any kind of physical activity. Hiking anyone?</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans53" name="answer5" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans53" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans53" id="a3">Playing video games or watching anime. Keeping up with the latest twitch streams!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans54" name="answer5" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans54" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans54" id="a4">Anything related to music! This is Nashville, after all.</label>
         </div>
       </li>
     </ul>
@@ -506,6 +506,13 @@ document.getElementById("q10").style.display = "block";'>Next</button>
     </div>
   </div>
 
+  <?php
+  echo '<input type="hidden" name="Name" value="'.$_POST['Name'].'">';
+  echo '<input type="hidden" name="L#" value="'.$_POST['L#'].'">';
+  echo '<input type="hidden" name="Email" value="'.$_POST['Email'].'">';
+  echo '<input type="hidden" name="Gender" value="'.$_POST['Gender'].'">';
+  echo '<input type="hidden" name="Bio" value="'.$_POST['Bio'].'">';
+  ?>
 
 </form>
 </main>
@@ -530,58 +537,3 @@ document.getElementById("q10").style.display = "block";'>Next</button>
 
   </body>
 </html>
-
-
-<?php
-
- // session_start();
-// mysql_connect('localhost', 'mpreyes', '') or die (mysql_error());
-// mysql_select_database('BisonMatch') or die (mysql_error());
-// if($_POST['submit']){
-$servername = "localhost";
-$username = "bisonConnect";
-$password = "bison1";
-$databasename = "BisonMatch";
-
-$conn = new mysqli($servername, $username, $password,$databasename);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-
-$studentName = $_POST['Name'];
-$studentLNo = $_POST['L#'];
-$studentEmail = $_POST['Email'];
-$studentGender = $_POST['Gender'];
-$studentBio = $_POST['Bio'];
-$ans1 = $_POST['answer1'];
-$ans2 = $_POST['answer2'];
-$ans3 = $_POST['answer3'];
-$ans4 = $_POST['answer4'];
-$ans5 = $_POST['answer5'];
-$ans6 = $_POST['answer6'];
-$ans7 = $_POST['answer7'];
-$ans8 = $_POST['answer8'];
-$ans9 = $_POST['answer9'];
-$ans10 = $_POST['answer10'];
-
-
-$query = "INSERT INTO LUStudent (Name, LNumber, EmailAddress, Gender, Bio, Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7, Ans8, Ans9, Ans10)
-VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '$ans1','$ans2','$ans3','$ans4','$ans5','$ans6','$ans7','$ans8','$ans9','$ans10')";
-
-if($conn->query($query) === TRUE) {
-  echo "Inserted student successfully";
-  echo $ans1;
-}
-else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
- // mysql_query($query);
-
- // echo "Thanks for the info";
-
-$conn->close();
-
-}
-?>
