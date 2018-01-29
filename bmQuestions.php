@@ -64,35 +64,35 @@
 
   <div class="card mb-3" id="q1">
     <div class="card-header" id="qNo">Question 1/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+    <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">You’re on a first date. Everything is going fine, except that _________, which is really bothersome.</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans11" name="answer1" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans11">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans11">They showed up 20 minutes late.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans12" name="answer1" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans12">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans12">They are a little too flirty.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans13" name="answer1" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans13">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans13">They are obviously nervous and don’t know what to talk about.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans14" name="answer1" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans14">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans14">They ask you how many kids you’d want someday.</label>
         </div>
       </li>
     </ul>
@@ -106,35 +106,35 @@
 
   <div class="card mb-3" id="q2">
     <div class="card-header" id="qNo">Question 2/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+    <img class="card-img-top" src="images/nobodygottimeforthat.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">If you could have dinner with any past president, dead or alive, who would it be?</h5>
+      <h5 class="card-title" id="qQ">The newest iPhone just came out. You:</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans21" name="answer2" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans21" id="a1">Abraham Lincoln (might need to be changed)</label>
+          <label class="custom-control-label" for="ans21" id="a1">Buy it as soon as it drops. Money isn’t everything and I love having the newest technology!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans22" name="answer2" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans22" id="a2">Franklin D. Roosevelt</label>
+          <label class="custom-control-label" for="ans22" id="a2">Wait a couple of months for it, that way I can get it at a cheaper price.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans23" name="answer2" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans23" id="a3">Barack Obama</label>
+          <label class="custom-control-label" for="ans23" id="a3">I’ll get it when the next one comes out. That’s when the price for this one is at its prime.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans24" name="answer2" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans24" id="a4">Ronald Reagan</label>
+          <label class="custom-control-label" for="ans24" id="a4">I still have my iphone 5, why would I spend a penny on a new one if this one still works?</label>
         </div>
       </li>
     </ul>
@@ -150,35 +150,35 @@ document.getElementById("q3").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q3">
     <div class="card-header" id="qNo">Question 3/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+      <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">The new iphone 11 just came out. You:</h5>
+      <h5 class="card-title" id="qQ">Do you have a secret hunch about how you will die? </h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item" id="field1">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans31" name="answer3" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans31" id="a1">Buy it as soon as it drops. (insert aside here)</label>
+          <label class="custom-control-label" for="ans31" id="a1">In the arms of the person I love. I won’t let go, Jack.</label>
         </div>
       </li>
       <li class="list-group-item" id="field2">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans32" name="answer3" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans32" id="a2">Wait a couple of months for it. I'll get it at a cheaper price.</label>
+          <label class="custom-control-label" for="ans32" id="a2">In my sleep at the ripe old age of 93. Nice and easy!</label>
         </div>
       </li>
       <li class="list-group-item" id="field3">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans33" name="answer3" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans33" id="a3">I’ll get it when the iphone 12 comes out. That’s when the price is at its prime.</label>
+          <label class="custom-control-label" for="ans33" id="a3">From a terrible pandemic. Ebola is real, and I’m probably next.</label>
         </div>
       </li>
       <li class="list-group-item" id="field4">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans34" name="answer3" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans34" id="a4">I still have my iphone 4. I won’t spend a penny on a new one until mine breaks.</label>
+          <label class="custom-control-label" for="ans34" id="a4">Tripping on the curb into oncoming traffic. Once a clutz, always a clutz.</label>
         </div>
       </li>
     </ul>
@@ -194,7 +194,7 @@ document.getElementById("q4").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q4">
     <div class="card-header" id="qNo">Question 4/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">You’re hanging out at a coffee shop with a friend. You’re most likely to talk about:</h5>
@@ -210,7 +210,7 @@ document.getElementById("q4").style.display = "block";'>Next</button>
       <li class="list-group-item" id="field2">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans42" name="answer4" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans42" id="a2">Something intellectual. (maybe a better aside)</label>
+          <label class="custom-control-label" for="ans42" id="a2">Something intellectual. “The unexamined life is not worth living” – Socrates</label>
         </div>
       </li>
       <li class="list-group-item" id="field3">
@@ -239,7 +239,7 @@ document.getElementById("q5").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q5">
     <div class="card-header" id="qNo">Question 5/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">On a typical Saturday, you’ll find me:</h5>
@@ -284,35 +284,35 @@ document.getElementById("q6").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q6">
     <div class="card-header" id="qNo">Question 6/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">If you could wake up tomorrow having gained any one quality or ability, what would it be?</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans61" name="answer6" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans61" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans61" id="a1">Oooh, flying!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans62" name="answer6" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans62" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans62" id="a2">Telekinesis. Move things with my mind? Duh. That’s cool.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans63" name="answer6" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans63" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans63" id="a3">Get all of my chapel credits without ever going to chapel.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans64" name="answer6" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans64" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans64" id="a4">I’d speak and understand any language. Think of the possibilities!</label>
         </div>
       </li>
     </ul>
@@ -329,35 +329,35 @@ document.getElementById("q7").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q7">
     <div class="card-header" id="qNo">Question 7/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">If you could be famous, what would you most like to be famous for?</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans71" name="answer7" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans71" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans71" id="a1">Being a performer! My life is a stage. Music, acting, you name it, I’d love to share my gift with the world!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans72" name="answer7" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans72" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans72" id="a2">Something Intellectual. Could you imagine if I was the next Jonas Salk? Marie Curie?</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans73" name="answer7" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans73" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans73" id="a3">Reality TV! No shame. Kim Kardashian is my spirit animal.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans74" name="answer7" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans74" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans74" id="a4">I’d be a professional athlete, for sure. I can already see my name in the hall of fame, and boy does it look good!</label>
         </div>
       </li>
     </ul>
@@ -374,35 +374,35 @@ document.getElementById("q8").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q8">
     <div class="card-header" id="qNo">Question 8/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">What do you value most in a friendship?</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans81" name="answer8" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans81" id="a1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans81" id="a1">Loyalty. Ride or die baby!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans82" name="answer8" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans82" id="a2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans82" id="a2">Common interests, for sure!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans83" name="answer8" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans83" id="a3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans83" id="a3">The ability to laugh and be goofy about anything.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans84" name="answer8" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans84" id="a4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans84" id="a4">Meme-tagging. It’s not true friendship unless I wake up to at least 10!</label>
         </div>
       </li>
     </ul>
@@ -419,35 +419,35 @@ document.getElementById("q9").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q9">
     <div class="card-header" id="qNo">Question 9/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
 
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ">When it comes to scary movies: </h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans91" name="answer9" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans91">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans91">I love them! I can’t wait for SAW 23 to come out.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans92" name="answer9" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans92">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans92">Um, no. I’d never sleep again!</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans93" name="answer9" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans93" >15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans93" >I’ll watch them if I have someone to snuggle with ;)</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans94" name="answer9" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans94">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans94">I’d rather watch something else. Can you say “predictable”?</label>
         </div>
       </li>
     </ul>
@@ -464,35 +464,35 @@ document.getElementById("q10").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q10">
     <div class="card-header" id="qNo">Question 10/10</div>
-    <img class="rounded mx-auto d-block" src="images/cuteappa.png" style="width:400px; height:400px;" alt="Cute appa">
-
+  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  
     <div class="card-body">
-      <h5 class="card-title" id="qQ">"Your friend is throwing a party at his house. You arrive:</h5>
+      <h5 class="card-title" id="qQ"> What would you do if you won $10,000?</h5>
     </div>
     <ul class="list-group list-group-flush">
 
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans1" name="answer10" value="1" class="custom-control-input" checked>
-          <label class="custom-control-label" for="ans1">A full hour early. I'm helping him set up.</label>
+          <label class="custom-control-label" for="ans1">Run away to a Greek island with my best friend and forget about my problems.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans2" name="answer10" value="2" class="custom-control-input">
-          <label class="custom-control-label" for="ans2">15 minutes early. I'm punctual.</label>
+          <label class="custom-control-label" for="ans2">Live a comfortable life knowing that I won’t have to worry about paying rent for a while! It’s the little things, ya know?</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans3" name="answer10" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans3">15 minutes late. Who gets to a party on time anyways?</label>
+          <label class="custom-control-label" for="ans3">How many puppies will this buy me?</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans4" name="answer10" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans4">An hour late. I like making an entrance.</label>
+          <label class="custom-control-label" for="ans4">Invest it in an account with compound interest so that I can be a baller in my retirement.</label>
         </div>
       </li>
     </ul>
