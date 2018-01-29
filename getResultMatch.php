@@ -23,11 +23,20 @@ function getResult($gender, $id){
   $index = 0;
   for($a = 0; $a < mysqli_num_rows($result); $a++){
     $row = mysqli_fetch_assoc($result);
+    echo "Checking through new potential match #".$a."<br >";
     array_push($points, 0);
     for($i = 1; $i <= 10; $i++){
       if($i == 0){
-        if($personAns[0] == $row['Ans1'] || ($personAns[0] == 1 && $row['Ans1'] == 2)){
+        if($personAns[0] == $row['Ans1'] || ($personAns[0] == 1 && $row['Ans1'] == 4)){
           $points[$index]++;
+        }
+      }
+      if($i == 0//change out for other questions with stupid coresponding answers){
+
+      }
+      else{
+        if($personAns[$i] == $row[$i]){
+          $points[index]++;
         }
       }
     }

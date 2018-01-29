@@ -3,8 +3,10 @@
 
 
 $servername = "localhost";
-$username = "bisonConnect";
-$password = "bison1";
+//$username = "bisonConnect";
+//$password = "bison1";
+$username = "root";
+$password = "toor";
 $databasename = "BisonMatch";
 
 $conn = new mysqli($servername, $username, $password,$databasename);
