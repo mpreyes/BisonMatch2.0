@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-
-<html>
-<p> Hello ? </p>
-</html>
 
 <?php
 
  session_start();
 
  require_once 'phpmailer/PHPMailerAutoload.php';
- echo "anyone here?";
+ #echo "anyone here?";
 
  $name = $_POST['name'];
  $email = $_POST['email'];
  $LNo = $_POST['id'];
+ $gender = $_POST['gender'];
 
-echo   $name;
-echo  $email;
-echo   $LNo;
+ #getResult($gender);
 
+#echo   $name;
+#echo  $email;
+#echo   $LNo;
 $m = new PHPMailer;
 $m->isSMTP();
 $m->SMTPAuth = true;
@@ -30,17 +27,20 @@ $m->Port = 465;
 
 $m->isHTML();
 $m->Subject = 'BisonMatch Results';
-$m->Body = 'Dear, ' . $name . ' ';
+$m->Body = 'Dear ' . $name . ', ';
 
 $m->FromName = 'BisonMatch';
 
-$m->AddAddress('nrrutledge@mail.lipscomb.edu',$name);
+$m->AddAddress($email,$name);
 
-$location = "index.php";
-echo "Did you work?";
-if($m->send()){
-  header('Location: adminPanel.php');
-  echo "won";
-  die();
-}
+$m->send()
+  #header('Location: /adminPanel.php');
+  #echo "won";
+  #die();
  ?>
+
+ <html>
+<head>
+<meta http-equiv="refresh" content="1;url=adminPanel.php" />
+</head>
+</html>

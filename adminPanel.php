@@ -125,6 +125,7 @@ if(isset($_POST['search']) && !empty($_POST['search'])){
       $id = $row['LNumber'];
       $name = $row['Name'];
       $email = $row['EmailAddress'];
+      $gender = $row['Gender'];
 
       //  echo "\n$rowinfo"
       $output .= '<tr><td>'
@@ -134,6 +135,7 @@ if(isset($_POST['search']) && !empty($_POST['search'])){
     <input type="hidden" name="email" value='.$email.'/>
     <input type="hidden" name="name" value='.$name.' />
     <input type="hidden" name="id" value= '.$id.' />
+    <input type="hidden" name="id" value= '.$gender.' />
      </form></td>';
     }
 
