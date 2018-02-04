@@ -47,14 +47,14 @@
     <!-- Begin page content -->
 <main role="main" class="container">
   <div class="mt-3">
-    <h1 class="text-center">Take the Loooove Quiz</h1>
+    <h1 class="text-center">But first, some info...</h1>
   </div>
 
 <form method="post" action="bmQuestions.php">
   <div class="container" id="frm">
     <div class="form-group">
       <label for="Name">Name:</label>
-      <input type="text" class="form-control" id="Name" name="Name" aria-describedby="emailHelp" placeholder="Enter your first and last name" required>
+      <input type="text" class="form-control" id="studentName" name="Name" aria-describedby="emailHelp" placeholder="Enter your first and last name" required>
     </div>
     <div class="form-group">
       <label for="L#">L#:</label>
@@ -67,11 +67,11 @@
     </div>
      Gender: &nbsp;
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="Gender" value="Male" id="Gender" value="option1" required>
+      <input class="form-check-input" type="radio" name="Gender" value="Male" id="Gender" required>
       <label class="form-check-label" for="Gender">Male</label>
     </div>
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="Gender" value="Femail" id="Gender" value="option2" required>
+      <input class="form-check-input" type="radio" name="Gender" value="Female" id="Gender" required>
       <label class="form-check-label" for="Gender">Female</label>
     </div>
 
@@ -79,8 +79,9 @@
       <label for="Bio">Short Bio:</label>
       <textarea class="form-control" id="Bio" name="Bio" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
     </div>
-
-    <button class="btn btn-primary text-center" type="submit">Submit</button>
+    <div class="text-center">
+    <button class="btn btn-primary" type="submit" name="submit" value="submit">Next</button>
+  </div>
   </div>
 </form>
 
@@ -98,7 +99,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
+
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/quizStuff.js"></script>
+
   </body>
 </html>

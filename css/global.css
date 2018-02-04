@@ -8,6 +8,10 @@
   display: block;
 }
 
+nav {
+  padding-bottom: 30px;
+}
+
 .quizInfo {
 display: none;
 }
