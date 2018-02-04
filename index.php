@@ -14,10 +14,21 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/global.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- C ustom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <style>
+
+      .col-md {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .bM {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
 
 
 
@@ -50,19 +61,69 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <div class="mt-3">
-        <h1 class="text-center">Welcome to BisonMatch! Version 2.0</h1>
+        <h1 class="text-center">Welcome to Bison Match!</h1>
       </div>
 
 
 
-      <div class="container">
+      <!-- <div class="container">
+        <h3 class="text-center">What is BisonMatch?</h3>
  &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
- It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life (this is Lipscomb after all)!
+ It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life! (this is Lipscomb after all)
+      </div> -->
+
+<!-- <div class="container"> -->
+<div class="bM">
+<div class="card">
+  <h3 class="card-header text-center">What is Bison Match?</h3>
+  <div class="card-body">
+    <h5 class="card-title text-center">Your ticket to a date for Valentines day</h5>
+    <p class="card-text"> &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
+     It is designed to match you up with the perfect person to spend Valentine's Day with, and maybe even the rest of your life! (this is Lipscomb after all)</p>
+
+  </div>
+</div>
+</div>
+
+
+        <h3 class="text-center">How Does It Work?</h3>
+<!-- All you have to do is answer a few questions, then before Valentine's Day comes around you will be given the option of purchasing your results.
+The proceeds from your purchase will go to raising funds for the ACM of Lipscomb University.
+So take the test, donate $2.00, and find your date for Valentine's Day!
+      </div> -->
+
+
+      <div class="row">
+        <div class="col-md">
+          <div class="card text-center" style="width: fill; height: 12rem;">
+      <div class="card-body">
+        <h5 class="card-title">Fill out the Quiz</h5>
+        <p class="card-text">Answer ten questions put together by some of the finest physcology minds at Lipscomb.</p>
+      </div>
+    </div>
+        </div>
+        <div class="col-md">
+          <div class="card text-center" style="width: fill; height: 12rem;">
+    <div class="card-body">
+      <h5 class="card-title">Purchase Your Results</h5>
+      <p class="card-text">Sometime before Valentines Day, you will be given the option to purchase the results for $2.00. </p>
+    </div>
+  </div>
+</div>
+<div class="col-md">
+  <div class="card text-center" style="width: fill; height: 12rem;">
+<div class="card-body">
+<h5 class="card-title">Find Your Date for Valentines Day</h5>
+<p class="card-text">You will receive the names and info of 10 students whom you can contact to set up a date.</p>
+</div>
+</div>
+</div>
+
       </div>
 
-      <div class="container text-center">
-        <p class="lead"> Ready to start? </p>
-        <a href="bmQuiz.php"><button type="button" class="btn btn-danger">Find me love</button></a>
+      <div class="container text-center bM">
+        <p class="lead"> Ready to start?</p>
+        <a href="studentInfo.php"><button type="button" class="btn btn-lg btn-danger">Find me love</button></a>
 
       </div>
 
@@ -79,8 +140,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

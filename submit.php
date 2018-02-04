@@ -1,4 +1,58 @@
 
+<?php
+
+
+$servername = "localhost";
+//$username = "bisonConnect";
+//$password = "bison1";
+$username = "root";
+$password = "toor";
+$databasename = "BisonMatch";
+
+$conn = new mysqli($servername, $username, $password,$databasename);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$studentName = $_POST['Name'];
+$studentLNo = $_POST['L#'];
+$studentEmail = $_POST['Email'];
+$studentGender = $_POST['Gender'];
+$studentBio = $_POST['Bio'];
+$ans1 = $_POST['answer1'];
+$ans2 = $_POST['answer2'];
+$ans3 = $_POST['answer3'];
+$ans4 = $_POST['answer4'];
+$ans5 = $_POST['answer5'];
+$ans6 = $_POST['answer6'];
+$ans7 = $_POST['answer7'];
+$ans8 = $_POST['answer8'];
+$ans9 = $_POST['answer9'];
+$ans10 = $_POST['answer10'];
+
+
+
+// $query = "SELECT * FROM `administrator`";
+$query = "INSERT INTO LUStudent (Name, LNumber, EmailAddress, Gender, Bio, Ans1, Ans2, Ans3, Ans4, Ans5, Ans6, Ans7, Ans8, Ans9, Ans10) VALUES ('$studentName', '$studentLNo', '$studentEmail', '$studentGender', '$studentBio', '$ans1','$ans2','$ans3','$ans4','$ans5','$ans6','$ans7','$ans8','$ans9','$ans10')";
+
+$result = mysqli_query($conn, $query);
+
+if($result){
+  echo "Inserted student successfully";
+
+}
+else{
+    echo "Error: <br>" . $conn->error;
+}
+ // mysql_query($query);
+
+ // echo "Thanks for the info";
+
+$conn->close();
+?>
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +69,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/global.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- C ustom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <style>
@@ -50,36 +104,9 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <div class="mt-3">
-        <h1 class="text-center">Welcome to BisonMatch! Version 2.0</h1>
-      </div>
-
-
-      <div class="card" style="width: 40rem;">
-  <img class="card-img-top" src="images/cuteappa.png" alt="Cute appa">
-  <div class="card-body">
-    <h5 class="card-title text-center">Question</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
-  <div class="card-body text-center">
-    <a href="#" class="card-link"><button type="button" class="btn btn-primary">Next</button></a>
-  </div>
-</div>
-
-
-
-
+<p> Thanks for your submission!</p>
 
     </main>
-
-
-
 
 
     <footer class="footer">
@@ -92,8 +119,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
