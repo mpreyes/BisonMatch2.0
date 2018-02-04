@@ -4,14 +4,13 @@
 
  require_once 'phpmailer/PHPMailerAutoload.php';
  require_once './getResultMatch.php';
- #echo "anyone here?";
 
  $name = $_POST['name'];
  $email = $_POST['email'];
  $LNo = $_POST['id'];
  $gender = $_POST['gender'];
 
-echo getResult($gender, $LNo);
+$results = getResult($gender, $LNo);
 
 #echo   $name;
 #echo  $email;
