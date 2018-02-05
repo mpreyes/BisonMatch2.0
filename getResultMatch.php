@@ -1,10 +1,9 @@
 <?php
 
-//$db = mysqli_connect("localhost", "bisonConnect", "bison1", "BisonMatch");
 
 function getResult($gender, $id){
 
-  $db = mysqli_connect("localhost", "root", "toor", "BisonMatch");
+  $db = mysqli_connect("68.178.217.6", "bisonmatch", "Bison51#", "bisonmatch");
 
   $query = "SELECT * FROM LUStudent WHERE `LNumber` = '$id'";
   $person = mysqli_query($db, $query);
@@ -66,11 +65,12 @@ function getResult($gender, $id){
   var_dump($points);
   $matches = array();
   //return [][]
+  return 0;
 }
 
-function main(){
-    getResult("Male", "L443");
-}
-
-main();
+// function main(){
+//     getResult("Male", "L443");
+//
+// }
+// main();
 ?>

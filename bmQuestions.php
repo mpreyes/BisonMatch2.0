@@ -1,12 +1,14 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A fundrasing effort Lipscomb's ACM chapter">
+    <meta name="description" content="A fundrasing effort for Lipscomb's ACM chapter">
     <meta name="author" content="Lipscomb University student ACM chapter">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+
 
     <title>BisonMatch</title>
 
@@ -25,6 +27,43 @@
 .hide{
   display:none;
 }
+
+form {
+  padding-bottom: 20px;
+}
+
+body {
+   background-color: #f2eebf;
+}
+.footer {
+
+  color: #ffffff;
+
+}
+
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+     /* It's possible to hide the image if the screen becomes too small */
+     .img-responsive {
+       max-height: 30%;
+     }
+}
+
+@media screen and (max-width: 767px) {
+     /* start of medium tablet styles */
+     /* Adding a fixed/percentage min-width could ensure that the image doesn't get too small */
+     .img-responsive {
+       min-height: 30%;
+     }
+}
+@media screen and (max-width: 991px) {
+     /* start of large tablet styles */
+     .img-responsive {
+       min-height: 70%;
+     }
+}
+
 </style>
 
 
@@ -64,7 +103,7 @@
 
   <div class="card mb-3" id="q1">
     <div class="card-header" id="qNo">Question 1/10</div>
-    <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+    <img class="card-img-top" src="images/date.gif" class="img-responsive" alt="Date plan">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">You’re on a first date. Everything is going fine, except that _________, which is really bothersome.</h5>
@@ -106,7 +145,7 @@
 
   <div class="card mb-3" id="q2">
     <div class="card-header" id="qNo">Question 2/10</div>
-    <img class="card-img-top" src="images/nobodygottimeforthat.gif" style=" height:600px;" alt="Cute appa">
+    <img class="card-img-top" src="images/iphone.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">The newest iPhone just came out. You:</h5>
@@ -150,7 +189,7 @@ document.getElementById("q3").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q3">
     <div class="card-header" id="qNo">Question 3/10</div>
-      <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+      <img class="card-img-top" src="images/dead.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">Do you have a secret hunch about how you will die? </h5>
@@ -194,7 +233,7 @@ document.getElementById("q4").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q4">
     <div class="card-header" id="qNo">Question 4/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  <img class="card-img-top" src="images/coffee.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">You’re hanging out at a coffee shop with a friend. You’re most likely to talk about:</h5>
@@ -239,7 +278,7 @@ document.getElementById("q5").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q5">
     <div class="card-header" id="qNo">Question 5/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  <img class="card-img-top" src="images/weekend.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">On a typical Saturday, you’ll find me:</h5>
@@ -284,7 +323,7 @@ document.getElementById("q6").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q6">
     <div class="card-header" id="qNo">Question 6/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  <img class="card-img-top" src="images/hero.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">If you could wake up tomorrow having gained any one quality or ability, what would it be?</h5>
@@ -329,7 +368,7 @@ document.getElementById("q7").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q7">
     <div class="card-header" id="qNo">Question 7/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  <img class="card-img-top" src="images/famous.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">If you could be famous, what would you most like to be famous for?</h5>
@@ -371,10 +410,9 @@ document.getElementById("q8").style.display = "block";'>Next</button>
     </div>
   </div>
 
-
   <div class="card mb-3" id="q8">
     <div class="card-header" id="qNo">Question 8/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  <img class="card-img-top" src="images/friends.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">What do you value most in a friendship?</h5>
@@ -396,13 +434,13 @@ document.getElementById("q8").style.display = "block";'>Next</button>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans83" name="answer8" value="3" class="custom-control-input">
-          <label class="custom-control-label" for="ans83" id="a3">The ability to laugh and be goofy about anything.</label>
+          <label class="custom-control-label" for="ans83" id="a3">The ability to laugh and be goofy about anything. Sharing dank memes, yo.</label>
         </div>
       </li>
       <li class="list-group-item">
         <div class="custom-control custom-radio">
           <input type="radio" id="ans84" name="answer8" value="4" class="custom-control-input">
-          <label class="custom-control-label" for="ans84" id="a4">Meme-tagging. It’s not true friendship unless I wake up to at least 10!</label>
+          <label class="custom-control-label" for="ans84" id="a4">Someone to talk to about deep issues.</label>
         </div>
       </li>
     </ul>
@@ -419,7 +457,7 @@ document.getElementById("q9").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q9">
     <div class="card-header" id="qNo">Question 9/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
+  <img class="card-img-top" src="images/scary.gif" class="img-responsive" alt="Cute appa">
 
     <div class="card-body">
       <h5 class="card-title" id="qQ">When it comes to scary movies: </h5>
@@ -464,10 +502,10 @@ document.getElementById("q10").style.display = "block";'>Next</button>
 
   <div class="card mb-3" id="q10">
     <div class="card-header" id="qNo">Question 10/10</div>
-  <img class="card-img-top" src="images/date.gif" style=" height:600px;" alt="Cute appa">
-  
+  <img class="card-img-top" src="images/money.gif" class="img-responsive" alt="Cute appa">
+
     <div class="card-body">
-      <h5 class="card-title" id="qQ"> What would you do if you won $10,000?</h5>
+      <h5 class="card-title" id="qQ"> What would you do if you won $100,000?</h5>
     </div>
     <ul class="list-group list-group-flush">
 
@@ -516,9 +554,9 @@ document.getElementById("q10").style.display = "block";'>Next</button>
 </form>
 </main>
 
-    <footer class="footer">
+    <footer class="footer bg-dark">
       <div class="container">
-        <span class="text-muted">&copy;2018 Lipscomb University's student ACM chapter</span>
+        <span>&copy;2018 LU student ACM chapter</span>
       </div>
     </footer>
 

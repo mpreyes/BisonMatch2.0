@@ -20,6 +20,27 @@
     padding-bottom: 20px;
     }
 
+    body {
+       background: linear-gradient(#d6f5ff, #f5ffd6);
+    }
+    .jumbotron{
+       margin-top: 30px;
+    }
+
+    .footer {
+
+      color: #ffffff;
+
+    }
+
+    @media screen and (max-width: 479px) {
+         /* start of phone styles */
+         /* It's possible to hide the image if the screen becomes too small */
+         .hideME {
+           display: none;
+         }
+    }
+
     </style>
 
   </head>
@@ -48,56 +69,69 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <div class="mt-3">
-        <h1 class="text-center"> BisonMatch</h1>
-        <p class="text-muted text-center">Version 2.0</p>
 
-        <p class="lead text-center">When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
-We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. — That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, — That whenever any Form of   </p>
 
-      </div>
+      <!-- <div class="mt-3">
+        <h1 class="text-center"> Soooo, these questions?</h1>
+        <p class="text-muted text-center">How are these questions supposed to find me a date??</p>
+
+        <p class="lead text-center"> When in the Course of human events it becomes necessary for one people to
+          dissolve the political bands which have connected them with another  </p>
+
+      </div> -->
+      <div class="jumbotron jumbotron-fluid">
+<div class="container">
+  <h1 class="display-4 text-center">Soooo, these questions?</h1>
+    <p class="text-muted text-center">How are these questions supposed to find me a date??</p>
+  <p class="lead text-center">When in the Course of human events it becomes necessary for one people to
+    dissolve the political bands which have connected them with another</p>
+</div>
+</div>
 
 
         <h3 class="text-center"> BisonMatch SuperTeam</h3>
 
           <ul class="list-unstyled">
-  <li class="media">
+             <li class="media my-4">
               <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Brionna Cunningham">
     <div class="media-body">
-      <h5 class="mt-0 mb-1">Brionna Cunningham</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    </div>
-  </li>
-  <li class="media my-4">
-              <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Shelby Leoni">
-    <div class="media-body">
-      <h5 class="mt-0 mb-1">Shelby Leoni</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-    </div>
-  </li>
-  <li class="media">
-              <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Madelyn Reyes">
-    <div class="media-body">
-      <h5 class="mt-0 mb-1">Madelyn Reyes</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <h5 class="mt-0 mb-1"><strong> Brionna Cunningham </strong>  &middot; MarketaRTBAbe </h5>
+      Our awesome visual design/art friend who designed our logo and helped with the visuals. We lured her with the promise of "This will be great for exposure!"
     </div>
   </li>
 
-  <li class="media">
+  <li class="media my-4">
+              <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Shelby Leoni">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><strong> Shelby Leoni</strong> &middot; Cupid </h5>
+      The perfectly average compiler of questions. Great mind and great body. BOYS get on this.
+    </div>
+  </li>
+
+  <li class="media my-4">
+      <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Madelyn Reyes">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><strong>Madelyn Reyes</strong> &middot; Front-End Center</h5>
+      Ye olde computer doing spinster.
+    </div>
+  </li>
+
+  <li class="media  my-4">
               <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Noah Rutledge">
     <div class="media-body">
-      <h5 class="mt-0 mb-1">Noah Rutledge</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <h5 class="mt-0 mb-1"><strong>Noah Rutledge</strong> &middot; Likes it in the Back-End</h5>
+      Extremely great at back end stuff. Noah is the apathetic grandpa we'd all
+      love to have.
+
     </div>
   </li>
 </ul>
 
-
     </main>
 
-    <footer class="footer">
+    <footer class="footer bg-dark">
       <div class="container">
-        <span class="text-muted">&copy;2018 LU ACM chapter<span class="text-muted float-right">Find the project on GitHub: <a href="https://github.com/mpreyes/BisonMatch">BisonMatch</a></span>
+        <span class="hideME">&copy;2018 LU ACM chapter</span><span class="float-right">Find the project on GitHub: <a href="https://github.com/mpreyes/BisonMatch">BisonMatch</a></span>
       </div>
     </footer>
     <!-- Bootstrap core JavaScript

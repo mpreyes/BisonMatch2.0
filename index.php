@@ -19,6 +19,21 @@
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <style>
 
+    body {
+
+      background: linear-gradient(#9966cc, #fafad2);
+       /* background-color:  #f0e9fb; */
+    }
+      nav {
+        background-color:	#4C2C81;
+      }
+      .footer {
+
+        color: #ffffff;
+
+      }
+
+
       .col-md {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -29,8 +44,12 @@
         padding-top: 20px;
         padding-bottom: 20px;
       }
+      .img-fluid {
+        max-height: 50%;
+      }
 
 
+      #btext {}
 
     </style>
   </head>
@@ -40,7 +59,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.php">BisonMatch</a>
+        <a class="navbar-brand" href="#" >BisonMatch</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,9 +82,9 @@
       <div class="mt-3">
         <h1 class="text-center">Welcome to Bison Match!</h1>
       </div>
-
-
-
+      <div class="text-center">
+        <img src="images/purplebison.png" class="img-fluid" alt="Bison Match Logo">
+      </div>
       <!-- <div class="container">
         <h3 class="text-center">What is BisonMatch?</h3>
  &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
@@ -74,8 +93,8 @@
 
 <!-- <div class="container"> -->
 <div class="bM">
-<div class="card">
-  <h3 class="card-header text-center">What is Bison Match?</h3>
+<div class="card border-warning">
+  <h3 class="card-header text-center border-warning"><strong>What is Bison Match?</strong></h3>
   <div class="card-body">
     <h5 class="card-title text-center">Your ticket to a date for Valentines day</h5>
     <p class="card-text"> &nbsp;Bison Match is a Valentine's Day matching service only available to Lipscomb students. It is hosted by Lipscomb's very own College of Computing and Technology as a project for members of our local chapter of ACM - the Association for Computing Machinery.
@@ -86,7 +105,7 @@
 </div>
 
 
-        <h3 class="text-center">How Does It Work?</h3>
+        <h3 class="text-center"><strong> How Does It Work?</strong></h3>
 <!-- All you have to do is answer a few questions, then before Valentine's Day comes around you will be given the option of purchasing your results.
 The proceeds from your purchase will go to raising funds for the ACM of Lipscomb University.
 So take the test, donate $2.00, and find your date for Valentine's Day!
@@ -95,25 +114,25 @@ So take the test, donate $2.00, and find your date for Valentine's Day!
 
       <div class="row">
         <div class="col-md">
-          <div class="card text-center" style="width: fill; height: 12rem;">
+          <div class="card text-center border-warning" style="width: fill; height: 12rem;">
       <div class="card-body">
-        <h5 class="card-title">Fill out the Quiz</h5>
+        <h4 class="card-title"><strong>Fill out the Quiz</strong></h4>
         <p class="card-text">Answer ten questions put together by some of the finest physcology minds at Lipscomb.</p>
       </div>
     </div>
         </div>
         <div class="col-md">
-          <div class="card text-center" style="width: fill; height: 12rem;">
+          <div class="card text-center border-warning" style="width: fill; height: 12rem;">
     <div class="card-body">
-      <h5 class="card-title">Purchase Your Results</h5>
+      <h4 class="card-title"><strong>Purchase Your Results</strong></h4>
       <p class="card-text">Sometime before Valentines Day, you will be given the option to purchase the results for $2.00. </p>
     </div>
   </div>
 </div>
 <div class="col-md">
-  <div class="card text-center" style="width: fill; height: 12rem;">
+  <div class="card text-center border-warning" style="width: fill; height: 12rem;">
 <div class="card-body">
-<h5 class="card-title">Find Your Date for Valentines Day</h5>
+<h4 class="card-title"><strong>Find Your Date for Valentines Day</strong></h4>
 <p class="card-text">You will receive the names and info of 10 students whom you can contact to set up a date.</p>
 </div>
 </div>
@@ -130,9 +149,10 @@ So take the test, donate $2.00, and find your date for Valentine's Day!
     </main>
 
 
-    <footer class="footer">
+
+    <footer class="footer bg-dark">
       <div class="container">
-        <span class="text-muted">&copy;2018 Lipscomb University's student ACM chapter</span>
+        <span>&copy;2018 LU student ACM chapter</span>
       </div>
     </footer>
 

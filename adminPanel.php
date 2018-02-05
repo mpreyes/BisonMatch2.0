@@ -1,13 +1,10 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
-$servername = "localhost";
-//$username = "bisonConnect";
-//$password = "bison1";
-$username = "root";
-$password = "toor";
-$databasename = "BisonMatch";
+
+$servername = "68.178.217.6";
+$username = "bisonmatch";
+$password = "Bison51#";
+$databasename = "bisonmatch";
 
 $conn = new mysqli($servername, $username, $password,$databasename);
 //check connection
@@ -136,8 +133,8 @@ if(isset($_POST['search']) && !empty($_POST['search'])){
     <input type="submit" name="send_results" value="Send Results"/>
     <input type="hidden" name="email" value='.$email.'/>
     <input type="hidden" name="name" value='.$name.' />
-    <input type="hidden" name="id" value='.$id.' />
-    <input type="hidden" name="gender" value='.$gender.' />
+    <input type="hidden" name="id" value= '.$id.' />
+    <input type="hidden" name="id" value= '.$gender.' />
      </form></td>';
     }
 
@@ -161,7 +158,6 @@ mysqli_close($conn);
 
 
     </main>
-
 
     <footer class="footer">
       <div class="container">

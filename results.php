@@ -1,6 +1,9 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A fundrasing effort Lipscomb's ACM chapter">
@@ -11,9 +14,27 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/global.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- C ustom styles for this template -->
     <link href="sticky-footer-navbar.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <style>
+
+    body {
+       background:  linear-gradient(#ffd0f3, #d6f5ff);
+
+       /* #fff0fb; */
+    }
+
+    .footer {
+
+      color: #ffffff;
+
+    }
+
+
+    </style>
   </head>
 
   <body>
@@ -41,15 +62,33 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <div class="mt-3">
-        <h1>Info about where to get results</h1>
-      </div>
-      <p class="lead">schedule of table time/ events. etc</p>
+
+
+<div class="mt-3">
+  <h1 class="text-center">Thanks for supporting ACM!</h1>
+</div>
+
+
+<div class="text-center">
+  <img src="images/thanks.gif" class="img-fluid" alt="Bison Match Logo">
+</div>
+
+
+        <div class="mt-3">
+          <h1 class="text-center">So, how do I get my matches?</h1>
+        </div>
+
+
+      <p class="lead text-center">Insert schedule of table time/ events. etc</p>
+
+
+
     </main>
 
-    <footer class="footer">
+
+    <footer class="footer bg-dark">
       <div class="container">
-        <span class="text-muted">&copy;2018 Lipscomb University's student ACM chapter</span>
+        <span>&copy;2018 LU student ACM chapter</span>
       </div>
     </footer>
 

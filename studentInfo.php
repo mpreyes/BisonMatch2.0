@@ -1,5 +1,5 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 
@@ -20,15 +20,25 @@
     <link href="sticky-footer-navbar.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
-<?php
-//  session_start();
-// $_SESSION['Name'] = $studentName;
-// $_SESSION['L#'] = $studentLNo;
-// $_SESSION['Email'] = $studentEmail;
-// $_SESSION['Gender'] = $studentGender;
-// $_SESSION['Bio'] = $studentBio;
+<style>
+body {
 
-?>
+    background: linear-gradient( #e9fbf9,#a8e594);
+
+
+  /* background-color: #e9fbf9; */
+}
+
+form {
+  padding-bottom: 20px;
+}
+.footer {
+
+  color: #ffffff;
+
+}
+
+</style>
 
 </head>
 
@@ -89,7 +99,7 @@
 
     <div class="form-group">
       <label for="Bio">Short Bio:</label>
-      <textarea class="form-control" id="Bio" name="Bio" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="2"></textarea>
+      <textarea class="form-control" id="Bio" name="Bio" placeholder="Give your matches a short bio! Or add social media handles to help them find you." rows="3"></textarea>
     </div>
     <div class="text-center">
     <button class="btn btn-primary" type="submit" name="submit" value="submit">Next</button>
@@ -99,9 +109,9 @@
 
 </main>
 
-    <footer class="footer">
+    <footer class="footer bg-dark">
       <div class="container">
-        <span class="text-muted">&copy;2018 Lipscomb University's student ACM chapter</span>
+        <span>&copy;2018 LU student ACM chapter</span>
       </div>
     </footer>
 
