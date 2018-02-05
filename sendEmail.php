@@ -5,7 +5,6 @@
 
  require_once 'phpmailer/PHPMailerAutoload.php';
  require_once './getResultMatch.php';
- #echo "anyone here?";
 
  $name = $_POST['name'];
  $email = $_POST['email'];
