@@ -69,18 +69,12 @@ function getResult($gender, $id){
       }
     }
   }
-<<<<<<< HEAD
+
   var_dump($points);
   $matches = array();
   //return [][]
   return 0;
 }
-
-// function main(){
-//     getResult("Male", "L443");
-//
-// }
-=======
 
   //pull top five results
   $tmp = array();
@@ -91,11 +85,6 @@ function getResult($gender, $id){
   return $matches;
 }
 
-// function main(){
-//     $test = getResult("Male", "L443");
-//     var_dump($test);
-// }
-//
->>>>>>> c7e501c16683a7e9ebc590a40838ec60b4d17997
+
 // main();
 ?>
