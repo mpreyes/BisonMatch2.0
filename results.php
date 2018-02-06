@@ -79,7 +79,7 @@
         </div>
 
 
-      <p class="lead text-center">Insert schedule of table time/ events. etc</p>
+      <p class="lead text-center">Insert schedule of table time/ events. etc Get info from Andie/Greg/Adl</p>
 
 
 

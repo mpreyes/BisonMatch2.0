@@ -3,19 +3,20 @@
 
  session_start();
 
+
  require_once 'phpmailer/PHPMailerAutoload.php';
- require_once './getResultMatch.php';
+ require_once 'getResultMatch.php';
+ #echo "anyone here?";
 
  $name = $_POST['name'];
  $email = $_POST['email'];
- $LNo = $_POST['id'];
+ $id = $_POST['id'];
+
+
  $gender = $_POST['gender'];
 
-$test = getResult($gender,$LNo);
+ $match = getResult($gender,$id);
 
-#echo   $name;
-#echo  $email;
-#echo   $LNo;
 $m = new PHPMailer;
 $m->isSMTP();
 #$m->SMTPDebug  = 2;
@@ -37,31 +38,27 @@ that they wrote something actually useful in their bio. <br><br>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">#</th>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Bio</th>
+      <th scope="col">Points Matched</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+  ';
+
+     foreach ($match as $v1) {
+        $m->Body .=  '<tr>';
+         foreach ($v1 as $v2) {
+             $m->Body .= "<td>";
+             $m->Body .= "  " . $v2 . "  ";
+             $m->Body .= "</td>";
+         }
+          $m->Body .= "<br><br>";
+           $m->Body .=  '</tr>';
+     }
+
+$m->Body .=   '
   </tbody>
 </table>
 <br>
@@ -74,14 +71,11 @@ $m->FromName = 'BisonMatch';
 $email = substr($email,0, -1);
 $m->AddAddress($email,$name);
 
-$m->send()
-  #header('Location: /adminPanel.php');
-  #echo "won";
-  #die();
- ?>
+$m->send();
 
- <!-- <html>
+ ?>
+ <html>
 <head>
 <meta http-equiv="refresh" content="0;url=adminPanel.php" />
 </head>
-</html> -->
+</html>

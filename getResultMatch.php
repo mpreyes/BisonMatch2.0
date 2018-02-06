@@ -3,6 +3,9 @@
 
 function getResult($gender, $id){
 
+  //echo $id."<br>";
+  //echo $gender."<br>";
+
   $db = mysqli_connect("68.178.217.6", "bisonmatch", "Bison51#", "bisonmatch");
 
   $query = "SELECT * FROM LUStudent WHERE `LNumber` = '$id'";
@@ -10,22 +13,22 @@ function getResult($gender, $id){
   $row = mysqli_fetch_assoc($person);
   //get recipients answers
   $personAns = array($row['Ans1'], $row['Ans2'], $row['Ans3'], $row['Ans4'], $row['Ans5'], $row['Ans6'], $row['Ans7'], $row['Ans8'], $row['Ans9'], $row['Ans10']);
-  var_dump($personAns);
+//var_dump($personAns);
 
   //get all opposite gender people
   $query = "SELECT `Ans1`, `Ans2`, `Ans3`, `Ans4`, `Ans5`, `Ans6`, `Ans7`, `Ans8`, `Ans9`, `Ans10`, `Name`, `EmailAddress`, `Bio` FROM LUStudent WHERE `Gender` != '".$gender."'";
   $result = mysqli_query($db, $query);
 
-  //create matches array that holds the name, email, and bio of all people who have 7 points or higher
-  $matches = array();
-  for($a = 0; $a < mysqli_num_rows($result); $a++){
+   //create matches array that holds the name, email, and bio of all people who have 7 points or higher
+   $matches = array();
+   for($a = 0; $a < mysqli_num_rows($result); $a++){
     //points that hold how many matching questions
     $points = 0;
     //get the row
     $row = mysqli_fetch_row($result);
-
     //loop through all ten questions
     for($i = 1; $i <= 10; $i++){
+      //echo $personAns[$i-1] . " == " . $row[$i-1] . "<br>";
       if($i == 2){ //match 1&&2 2&&3 3&&4
         if(($personAns[1] == 2 && $row[1] == 1) || ($personAns[1] == 2 && $row[1] == 3) || ($personAns[1] == 3 && $row[1] == 4) || ($personAns[1] == $row[1])){
           $points++;
@@ -53,11 +56,13 @@ function getResult($gender, $id){
       }
     }
     //if the points is >= 7 put in info along with points
+    //echo $points . "<br>";
     if($points >= 7){
       $match = array($row[10], $row[11], $row[12], $points);
       array_push($matches, $match);
+
     }
-  }
+   }
 
   //Order the matches from greatest amount to least through bubble sort
   for($i = 0; $i < count($matches); $i++){
@@ -70,12 +75,6 @@ function getResult($gender, $id){
     }
   }
 
-  var_dump($points);
-  $matches = array();
-  //return [][]
-  return 0;
-}
-
   //pull top five results
   $tmp = array();
   for($i = 0; $i < 5; $i++){
@@ -84,7 +83,4 @@ function getResult($gender, $id){
   $matches = $tmp;
   return $matches;
 }
-
-
-// main();
 ?>

@@ -70,6 +70,7 @@ form {
 <main role="main" class="container">
   <div class="mt-3">
     <h1 class="text-center">But first, some info...</h1>
+    <h6 class="text-muted text-center"> Your matches will only receive your name, email, & bio. </h6>
   </div>
 
 <form method="post" action="bmQuestions.php">

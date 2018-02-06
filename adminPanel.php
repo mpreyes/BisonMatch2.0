@@ -134,7 +134,7 @@ if(isset($_POST['search']) && !empty($_POST['search'])){
     <input type="hidden" name="email" value='.$email.'/>
     <input type="hidden" name="name" value='.$name.' />
     <input type="hidden" name="id" value= '.$id.' />
-    <input type="hidden" name="id" value= '.$gender.' />
+    <input type="hidden" name="gender" value= '.$gender.' />
      </form></td>';
     }
 
