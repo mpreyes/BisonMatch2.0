@@ -41,7 +41,7 @@ that they wrote something actually useful in their bio. <br><br>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Bio</th>
-      <th scope="col">Points Matched</th>
+      <th scope="col">Match Rating</th>
     </tr>
   </thead>
   <tbody>
@@ -49,19 +49,28 @@ that they wrote something actually useful in their bio. <br><br>
 
      foreach ($match as $v1) {
         $m->Body .=  '<tr>';
+        $index = 0;
          foreach ($v1 as $v2) {
-             $m->Body .= "<td>";
-             $m->Body .= "  " . $v2 . "  ";
-             $m->Body .= "</td>";
+            if($index == 3){
+              $m->Body .= "<td>";
+              $m->Body .= " &nbsp; " . $v2 . "0% &nbsp; ";
+              $m->Body .= "</td>";
+            }
+            else{
+              $m->Body .= "<td>";
+              $m->Body .= " &nbsp; " . $v2 . " &nbsp; ";
+              $m->Body .= "</td>";
+            }
+            $index++;
          }
           $m->Body .= "<br><br>";
-           $m->Body .=  '</tr>';
+          $m->Body .=  '</tr>';
      }
 
 $m->Body .=   '
   </tbody>
 </table>
-<br>
+
 Love, <br><br>
 
 The Bison Match Team

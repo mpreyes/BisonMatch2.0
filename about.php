@@ -60,7 +60,7 @@
               <a class="nav-link" href="results.php">Results</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About BisonMatch</a>
+              <a class="nav-link" href="about.php">About Bison Match</a>
             </li>
           </ul>
         </div>
@@ -83,8 +83,9 @@
 <div class="container">
   <h1 class="display-4 text-center">Soooo, these questions?</h1>
     <p class="text-muted text-center">How are these questions supposed to find me a date??</p>
-  <p class="lead text-center">When in the Course of human events it becomes necessary for one people to
-    dissolve the political bands which have connected them with another</p>
+  <p class="lead text-center">Formulated using advanced matching algorithms and linear traversal data structures, we  used the results from our carefully curated
+    array of questions to pair you with someone to spend valentines day with. Our algorithm produced a compatibilty score per person
+  and our results reflect only the best matches from those evaluated.</p>
 </div>
 </div>
 
@@ -112,7 +113,7 @@
       <img class="mr-3" src="images/cuteappa.png" width="50px" height="50px" alt="Madelyn Reyes">
     <div class="media-body">
       <h5 class="mt-0 mb-1"><strong>Madelyn Reyes</strong> &middot; Front-End Center</h5>
-      Ye olde computer doing spinster.
+      Ye olde computer doing homebody.
     </div>
   </li>
 
@@ -131,7 +132,7 @@
 
     <footer class="footer bg-dark">
       <div class="container">
-        <span class="hideME">&copy;2018 LU ACM chapter</span><span class="float-right">Find the project on GitHub: <a href="https://github.com/mpreyes/BisonMatch">BisonMatch</a></span>
+        <span class="hideME">&copy;2018 LU ACM chapter</span><span class="float-right">Find the project on GitHub: <a href="https://github.com/mpreyes/BisonMatch2.0">BisonMatch2.0</a></span>
       </div>
     </footer>
     <!-- Bootstrap core JavaScript

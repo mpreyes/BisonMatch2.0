@@ -52,7 +52,7 @@
               <a class="nav-link" href="results.php">Results</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About BisonMatch</a>
+              <a class="nav-link" href="about.php">About Bison Match</a>
             </li>
           </ul>
 
@@ -79,9 +79,10 @@
         </div>
 
 
-      <p class="lead text-center">Insert schedule of table time/ events. etc Get info from Andie/Greg/Adl</p>
+      <p class="lead text-center">The Bison Match team will have tables set up in the Student Center this Friday, Monday, Tuesday, & Wednesday so you can purchase your
+    results! Check back here later for exact times.</p>
 
-
+    <p class="text-center">Got feedback?  Questions about the quiz?  Wanna tell us about your date?  Send us an email! <a href="mailto:bisonmatch2.0@gmail.com">bisonmatch2.0@gmail.com</a></p>
 
     </main>
 

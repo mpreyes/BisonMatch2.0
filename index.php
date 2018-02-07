@@ -69,7 +69,7 @@
               <a class="nav-link" href="results.php">Results</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About BisonMatch</a>
+              <a class="nav-link" href="about.php">About Bison Match</a>
             </li>
           </ul>
 
@@ -133,7 +133,7 @@ So take the test, donate $2.00, and find your date for Valentine's Day!
   <div class="card text-center border-warning" style="width: fill; height: 12rem;">
 <div class="card-body">
 <h4 class="card-title"><strong>Find Your Date for Valentines Day</strong></h4>
-<p class="card-text">You will receive the names and info of 10 students whom you can contact to set up a date.</p>
+<p class="card-text">You will receive the names and info of 7 students whom you can contact to set up a date.</p>
 </div>
 </div>
 </div>
